@@ -1,0 +1,110 @@
+/* responsive sidebar */
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    background-color: var(--clr-black);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    color: var(--clr-white);
+    border: var(--border-on);
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.photo {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+.links {
+    margin-top: 30px;
+}
+
+li {
+    padding-left: 30px;
+    height: 40px;
+}
+
+li a {
+    padding-left: 10px;
+    color: var(--clr-white);
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedin {
+    color: #0e76a8;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.whatsapp {
+    color: #25d366;
+}
+
+.github{
+    color: var(--clr-white);
+}
+
+.linkedin,
+.facebook,
+.whatsapp,
+.github {
+    width: 35px;
+    height: 35px;
+    margin: 30px 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -100px;
+    border: var(--border-on);
+}
+
+.small-logo {
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
