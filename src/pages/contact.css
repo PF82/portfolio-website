@@ -1,16 +1,16 @@
-/* about */
+/* contact */
 
 /* the value of the margin-left property should match the value of the sidebar's width property */
-.about {
+.contact {
     margin-left: 20%;
     padding: 50px;
-    min-height: 100vh;
+    min-height: 100vh; 
     color: var(--clr-white);
 }
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
-    .about {
+    .contact {
         margin-left: 0;
     }
 }

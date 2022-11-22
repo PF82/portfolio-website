@@ -1,0 +1,57 @@
+/* home */
+
+/* the value of the margin-left property should match the value of the sidebar's width property */
+.home {
+    margin-left: 20%;
+    padding: 50px;
+    min-height: 100vh;
+    color: var(--clr-white);
+    border: var(--b-off);
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.office-img {
+    width: 750px;
+    height: 600px;
+    border-radius: 50%;
+}
+
+.description {
+    position: absolute;
+    top: 80.5%;
+    left: 61%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: var(--clr-black);
+}
+
+.h1-home {
+    color: var(--clr-primary-4);
+}
+
+.h4-home {
+    padding-left: 30px;
+}
+
+.h2-home {
+    padding-left: 10px;
+}
+
+.h3-home {
+    padding-left: 20px;
+}
+
+/* on screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+    .home {
+        margin-left: 0;
+    }
+}

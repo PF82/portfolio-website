@@ -3,56 +3,11 @@ import "../pages/about.css"
 
 const About = () => {
   return (
-    <div className='about'>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam debitis necessitatibus rem vitae ipsa illo, cumque quia ducimus distinctio accusantium, iusto pariatur, nesciunt velit dolorem eius voluptatibus? Distinctio, deserunt!
+    <section className='about'>
+      <h1 className='h1-about'>About me</h1>
       <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae voluptas accusamus! Possimus ducimus repellendus nesciunt! Maxime odit id vero nobis, rerum corrupti facilis beatae eaque iusto quas molestiae sint.
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quisquam dolores cum dolorem, minima tempora pariatur vero? Aliquam, rerum nisi! Placeat et libero earum dolorem, debitis molestias mollitia tempore fugiat.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam debitis necessitatibus rem vitae ipsa illo, cumque quia ducimus distinctio accusantium, iusto pariatur, nesciunt velit dolorem eius voluptatibus? Distinctio, deserunt!
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae voluptas accusamus! Possimus ducimus repellendus nesciunt! Maxime odit id vero nobis, rerum corrupti facilis beatae eaque iusto quas molestiae sint.
-      <br />
-      <br />
-      Lore
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam debitis necessitatibus rem vitae ipsa illo, cumque quia ducimus distinctio accusantium, iusto pariatur, nesciunt velit dolorem eius voluptatibus? Distinctio, deserunt!
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae voluptas accusamus! Possimus ducimus repellendus nesciunt! Maxime odit id vero nobis, rerum corrupti facilis beatae eaque iusto quas molestiae sint.
-      <br />
-      <br />
-      Lore
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam debitis necessitatibus rem vitae ipsa illo, cumque quia ducimus distinctio accusantium, iusto pariatur, nesciunt velit dolorem eius voluptatibus? Distinctio, deserunt!
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae voluptas accusamus! Possimus ducimus repellendus nesciunt! Maxime odit id vero nobis, rerum corrupti facilis beatae eaque iusto quas molestiae sint.
-      <br />
-      <br />
-      Lore
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam debitis necessitatibus rem vitae ipsa illo, cumque quia ducimus distinctio accusantium, iusto pariatur, nesciunt velit dolorem eius voluptatibus? Distinctio, deserunt!
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae voluptas accusamus! Possimus ducimus repellendus nesciunt! Maxime odit id vero nobis, rerum corrupti facilis beatae eaque iusto quas molestiae sint.
-      <br />
-      <br />
-      Lore
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae numquam debitis necessitatibus rem vitae ipsa illo, cumque quia ducimus distinctio accusantium, iusto pariatur, nesciunt velit dolorem eius voluptatibus? Distinctio, deserunt!
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae voluptas accusamus! Possimus ducimus repellendus nesciunt! Maxime odit id vero nobis, rerum corrupti facilis beatae eaque iusto quas molestiae sint.
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae voluptas accusamus! Possimus ducimus repellendus nesciunt! Maxime odit id vero nobis, rerum corrupti facilis beatae eaque iusto quas molestiae sint.
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae voluptas accusamus! Possimus ducimus repellendus nesciunt! Maxime odit id vero nobis, rerum corrupti facilis beatae eaque iusto quas molestiae sint.
-      <br />
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quae voluptas accusamus! Possimus ducimus repellendus nesciunt! Maxime odit id vero nobis, rerum corrupti facilis beatae eaque iusto quas molestiae sint.
-    </div>
+      <p>You can find more about my experience on LinkedIn. If you're interested in my open source work, check Github. And, if you want to chat, send me a tweet.</p>
+    </section>
   )
 }
 

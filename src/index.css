@@ -32,9 +32,27 @@
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: black;
+
   /* background-color */
   --bg-color: linear-gradient(0deg, #537987 0%, #154579 60%);
 
+  /* font-sizes */
+  --fs-10: 10px;
+  --fs-12: 12px;
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-20: 20px;
+
+  /* borders */
+  --b-off: none;
+  --b-on: 2px solid red;
+
+  /* displays */
+  --d-n: none;
+  --d-b: block;
+
+  /* others */
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -42,8 +60,6 @@
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
-  --border-on: 2px solid red;
-  --border-off: none;
 }
 
 /* global styles */

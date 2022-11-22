@@ -19,7 +19,7 @@ const Navbar = () => {
 
       <ul className="links">
         <li>
-          <FaHome className="home" />
+          <FaHome />
           <Link to="/">Home</Link>
         </li>
         <li>
@@ -27,23 +27,23 @@ const Navbar = () => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <FaWindows className="portfolio" />
+          <FaWindows />
           <Link to="/portfolio">Portfolio</Link>
         </li>
         <li>
-          <MdOutlineMiscellaneousServices className="services" />
+          <MdOutlineMiscellaneousServices />
           <Link to="/services">Services</Link>
         </li>
         <li>
-          <RiMoneyPoundCircleFill className="pricing" />
+          <RiMoneyPoundCircleFill />
           <Link to="/pricing">Pricing</Link>
         </li>
         <li>
-          <MdReviews className="reviews" />
+          <MdReviews />
           <Link to="/reviews">Reviews</Link>
         </li>
         <li>
-          <FaEnvelope className="contact" />
+          <FaEnvelope />
           <Link to="/contact">Contact</Link>
         </li>
       </ul>

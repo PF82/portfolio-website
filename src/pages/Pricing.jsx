@@ -1,8 +1,11 @@
 import React from 'react'
+import "../pages/pricing.css"
 
 const Pricing = () => {
   return (
-    <div>Pricing</div>
+    <section className='pricing'>
+      <h1 className='h1-pricing'>Pricing</h1>
+    </section>
   )
 }
 

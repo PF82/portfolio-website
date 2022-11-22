@@ -6,9 +6,8 @@ import About from "./pages/About"
 import Portfolio from "./pages/Portfolio"
 import Services from "./pages/Services"
 import Pricing from "./pages/Pricing"
-import Testimonial from "./pages/Testimonial"
+import Reviews from "./pages/Reviews"
 import Contact from "./pages/Contact"
-
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="services" element={<Services />} />
           <Route path="pricing" element={<Pricing />} />
-          <Route path="testimonial" element={<Testimonial />} />
+          <Route path="reviews" element={<Reviews />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>

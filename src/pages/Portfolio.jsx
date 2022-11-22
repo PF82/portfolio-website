@@ -1,8 +1,11 @@
 import React from 'react'
+import "../pages/portfolio.css"
 
 const Portfolio = () => {
   return (
-    <div>Portfolio</div>
+    <section className='portfolio'>
+      <h1 className='h1-portfolio'>Portfolio</h1>
+    </section>
   )
 }
 
