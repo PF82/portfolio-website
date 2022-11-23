@@ -4,8 +4,59 @@
 .services {
     margin-left: 20%;
     padding: 50px;
-    min-height: 100vh; 
+    min-height: 100vh;
     color: var(--clr-white);
+}
+
+.list {
+    margin-top: 20px;
+}
+
+.item {
+    margin-left: 18px;
+}
+
+.h3-services{
+    margin-top: 50px;
+}
+.logo-group {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-row-gap: 45px;
+    grid-column-gap: 45px;
+    margin-top: 30px;
+}
+
+.software-logo {
+    border: var(--b-on);
+    background-color: var(--clr-white);
+    border: 0.2rem solid var(--clr-black);
+    border-radius: 0.8rem;
+    -webkit-box-shadow: 0 0 0.5rem 0.2rem var;
+    -moz-box-shadow: 0 0 0.5rem 0.2rem var(--clr-black);
+    box-shadow: 0 0 0.5rem 0.2rem var(--clr-black);
+    position: relative;
+    /* grid-row: 1 / 2;
+    grid-column: 2 / 3; */
+}
+
+.software-logo .technology-img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+}
+
+.technology {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: var(--clr-black);
+    margin-top: 35px;
 }
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */
