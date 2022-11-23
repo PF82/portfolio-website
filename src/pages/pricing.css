@@ -4,7 +4,34 @@
 .pricing {
     margin-left: 20%;
     padding: 50px;
-    min-height: 100vh; 
+    min-height: 100vh;
+    color: var(--clr-white);
+}
+
+table {
+    width: 200px;
+    height:250px;
+    display: grid;
+    grid: repeat(3, 150px) / repeat(3, 1fr);
+    grid-gap: 150px 50px;
+    border: var(--b-off);
+}
+
+tr {
+    border-collapse: collapse;
+    background: var(--clr-white);
+    color: var(--clr-black);
+    height: 60px;
+    width: 200px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading {
+    background: var(--clr-black);
     color: var(--clr-white);
 }
 
