@@ -1,43 +1,116 @@
 import React from 'react'
-import "../pages/contact.css"
-import { GoogleMap } from 'react-google-maps';
-import withScriptjs from 'react-google-maps/lib/withScriptjs';
-import withGoogleMap from 'react-google-maps/lib/withGoogleMap';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import "../pages/contact.css";
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { FaEnvelope } from "react-icons/fa";
+import { MdLocationPin } from "react-icons/md";
+import { ImMobile } from "react-icons/im";
+import { IoIosSend } from "react-icons/io";
 
-function Map() {
-  return (
-    <GoogleMap
-      defaultZoom={10}
-      defaultCenter={{ lat: 51.546506, lng: -0.105806 }}
-    />
-  )
-}
+const containerStyle = {
+  width: '100%',
+  height: '600px'
+};
 
-const WrappedMap = withScriptjs(withGoogleMap(Map));
+const location = {
+  lat: 51.562351,
+  lng: -0.117619
+};
 
 const Contact = () => {
-  return (
-    <section className='contact'>
-      <h1 className='h1-contact'>Contact and Location Map</h1>
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: "AIzaSyAzHIUbbKOWplVLDe8vYCiforDkjCgzVkY"
+  })
 
-<WrappedMap 
+  const [map, setMap] = React.useState(null)
 
+  const onLoad = React.useCallback(function callback(map) {
+    const bounds = new window.google.maps.LatLngBounds(location);
+    map.fitBounds(bounds);
+    setMap(map)
+  }, [])
 
-      {/* <Map google={this.props.google} zoom={14}>
+  const onUnmount = React.useCallback(function callback(map) {
+    setMap(null)
+  }, [])
 
-        <Marker onClick={this.onMarkerClick}
-          name={'Current location'} />
+  const [zoom, setZoom] = useState(10)
+    
+  useEffect(() => {
+    setTimeout(() => {
+        setZoom(11)
+    }, 300);
+  }, [])
 
-        <InfoWindow onClose={this.onInfoWindowClose}>
-          <div>
-            <h1>{this.state.selectedPlace.name}</h1>
+  return isLoaded ? (
+    <section className='contact-map'>
+      <h1 className='h1-contact'>CONTACT ME</h1>
+
+      <div className='contact-container'>
+        <div className='boxes'>
+          <div className='box box1'>
+            <FaEnvelope className='email' size={30} />
+            <p>pedrofernandes@hotmail.co.uk</p>
           </div>
-        </InfoWindow>
-      </Map> */}
+          <div className='box box2'>
+            <MdLocationPin className='location' size={30} />
+            <p>London, UK</p>
+          </div>
+          <div className='box box3'>
+            <ImMobile className='phone-number' size={30} />
+            <p>+447 951 255 944</p>
+          </div>
+        </div>
+
+        <hr className='line' />
+
+        <form className='contact-form' method='post' action="/action_page.php" target="_blank">
+          <div className='text-input'>
+            <label className='label'>Name</label>
+            <input className='input' type="text" name='Name' placeholder='' required />
+          </div>
+          <div className='text-input'>
+            <label className='label'>Email</label>
+            <input className='input' type="text" name='Email' placeholder='' required />
+          </div>
+          <div className='text-input'>
+            <label className='label' for="message">Message
+              <textarea
+                className='textarea'
+                name="message"
+                rows="1"
+                cols="30"
+                placeholder=''>
+              </textarea>
+            </label>
+          </div>
+
+          <button className='submit' type="submit">
+            <IoIosSend className='send' size={30} />
+            Submit</button>
+        </form>
+
+        <hr className='line' />
+
+        <div className='google-map'>
+          <GoogleMap
+            mapContainerClassName="map"
+            mapContainerStyle={containerStyle}
+            center={location}
+            zoom={zoom}
+            onLoad={onLoad}
+            onUnmount={onUnmount}
+          >
+            { /* Child components, such as markers, info windows, etc. */}
+            <Marker position={location} />
+          </GoogleMap>
+        </div>
+      </div>
+
     </section>
-  )
+  ) : <></>
 }
 
-export default GoogleApiWrapper({
-  apiKey: ("AIzaSyDjW1pVa41w0qHkK6mmdIGarzjtUjhaN_U")
-})(Contact)
+export default React.memo(Contact)

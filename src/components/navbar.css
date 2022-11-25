@@ -52,11 +52,22 @@ nav {
     margin-top: 30px;
 }
 
+.fahome,
+.fauser,
+.fawindows,
+.miscellaneousservices,
+.circlefill,
+.mdreviews,
+.faenvelope {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-bottom: 7px;
+}
+
 .nb-1 {
-    padding-top: 6px;
-    padding-left: 40px;
-    height: 40px;
+    padding-left: 60px;
     border: var(--b-off);
+    line-height: 40px;
 }
 
 .nb-1 a {
@@ -65,13 +76,13 @@ nav {
     text-decoration: none;
 }
 
-.nb-1:hover{
-    color: black;
-    background: white;
+.nb-1:hover {
+    color: var(--clr-black);
+    background-color: var(--clr-white);
 }
 
-.nb-1 a:hover{
-    color: black;
+.nb-1 a:hover {
+    color: var(--clr-black);
 }
 
 .social-icons {
@@ -92,7 +103,7 @@ nav {
     color: #25d366;
 }
 
-.github{
+.github {
     color: var(--clr-white);
 }
 

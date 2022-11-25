@@ -4,7 +4,7 @@ import "../pages/portfolio.css"
 const Portfolio = () => {
   return (
     <section className='portfolio'>
-      <h1 className='h1-portfolio'>Portfolio</h1>
+      <h1 className='h1-portfolio'>PORTFOLIO</h1>
     </section>
   )
 }

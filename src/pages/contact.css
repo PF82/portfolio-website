@@ -1,11 +1,108 @@
 /* contact */
 
 /* the value of the margin-left property should match the value of the sidebar's width property */
-.contact {
+.contact-map {
     margin-left: 20%;
-    padding: 50px;
-    min-height: 100vh; 
+    min-height: 100vh;
+    position: relative;
     color: var(--clr-white);
+    font-size: var(--fs-18);
+}
+
+.h1-contact {
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+.contact-container {
+    margin: 20px 50px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 33.33%;
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+    text-align: center;
+    line-height: 40px;
+}
+
+.box2,
+.box3 {
+    margin-bottom: -10px 0;
+    border-left: 2px solid var(--clr-white);
+}
+
+.box1 {
+    text-align: center;
+}
+
+.email,
+.location,
+.phone-number {
+    margin-bottom: -20px;
+}
+
+.box1 p,
+.box2 p,
+.box3 p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.text-input {
+    margin-top: 10px;
+    border: var(--b-off);
+}
+
+.contact-form,
+.lable,
+.input,
+.textarea {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    font-size: var(--fs-18);
+}
+
+.input,
+.textarea {
+    font-size: var(--fs-18);
+    padding-left: 10px;
+}
+
+.submit {
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+    line-height: 10px;
+    font-size: var(--fs-18);
+    color: var(--clr-white);
+    background-color: var(--clr-black);
+}
+
+.send {
+    margin-top: 2px;
+    padding-bottom: 5px;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.google-map {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    border: var(--b-off);
+}
+
+.google-map .map {
+    width: 100%;
 }
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */

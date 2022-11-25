@@ -19,31 +19,31 @@ const Navbar = () => {
 
       <ul className="links">
         <li className="nb-1">
-          <FaHome />
+          <FaHome className="fahome" />
           <Link to="/">Home</Link>
         </li>
         <li className="nb-1">
-          <FaUser />
+          <FaUser className="fauser" />
           <Link to="/about">About</Link>
         </li>
         <li className="nb-1">
-          <FaWindows />
+          <FaWindows className="fawindows" />
           <Link to="/portfolio">Portfolio</Link>
         </li>
         <li className="nb-1">
-          <MdOutlineMiscellaneousServices />
+          <MdOutlineMiscellaneousServices className="miscellaneousservices" />
           <Link to="/services">Services</Link>
         </li>
         <li className="nb-1">
-          <RiMoneyPoundCircleFill />
+          <RiMoneyPoundCircleFill className="circlefill" />
           <Link to="/pricing">Pricing</Link>
         </li>
         <li className="nb-1">
-          <MdReviews />
+          <MdReviews className="mdreviews" />
           <Link to="/reviews">Reviews</Link>
         </li>
         <li className="nb-1">
-          <FaEnvelope />
+          <FaEnvelope className="faenvelope" />
           <Link to="/contact">Contact</Link>
         </li>
       </ul>
