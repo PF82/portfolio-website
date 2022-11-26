@@ -5,9 +5,9 @@
     margin-left: 20%;
     padding: 50px;
     min-height: 100vh;
-    color: var(--clr-white);
     border: var(--b-off);
     position: relative;
+    /* font-size: large; */
 }
 
 .container {
@@ -30,7 +30,6 @@
     left: 61%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: var(--clr-black);
 }
 
 .h1-home {
@@ -39,14 +38,21 @@
 
 .h4-home {
     padding-left: 30px;
+    color: var(--clr-black);
+}
+
+.h4-home span {
+    color: var(--clr-black);
 }
 
 .h2-home {
     padding-left: 10px;
+    color: var(--clr-black);
 }
 
 .h3-home {
     padding-left: 20px;
+    color: var(--clr-black);
 }
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */

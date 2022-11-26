@@ -2,11 +2,11 @@
 
 /* the value of the margin-left property should match the value of the sidebar's width property */
 .contact-map {
+    font-size: large;
     margin-left: 20%;
     min-height: 100vh;
     position: relative;
     color: var(--clr-white);
-    font-size: var(--fs-18);
 }
 
 .h1-contact {

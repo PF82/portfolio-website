@@ -10,6 +10,7 @@ nav {
     overflow: auto;
     color: var(--clr-white);
     font-size: var(--fs-20);
+    font-weight: bold;
     border: var(--b-off);
 }
 
@@ -61,7 +62,7 @@ nav {
 .faenvelope {
     display: inline-flex;
     vertical-align: middle;
-    margin-bottom: 7px;
+    margin-bottom: 4px;
 }
 
 .nb-1 {
@@ -83,6 +84,7 @@ nav {
 
 .nb-1 a:hover {
     color: var(--clr-black);
+    font-weight: bold;
 }
 
 .social-icons {

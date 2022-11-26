@@ -5,16 +5,16 @@
   margin-left: 20%;
   padding: 50px;
   min-height: 100vh;
+  font-size: large;
   color: var(--clr-white);
 }
 
 .title {
   text-align: center;
   margin-bottom: 2rem;
-  color: red;
 }
 
-.title .h2-reviews {
+.title .h1-reviews {
   display: flex;
   align-items: left;
   justify-content: left;
@@ -50,31 +50,30 @@
   box-shadow: var(--dark-shadow);
 }
 
-article .h4-reviews {
+blockquote .h4-reviews {
   text-transform: uppercase;
-  color: var(--clr-primary-5);
+  color: var(--clr-black);
+  font-weight: bold;
   margin-bottom: 0.25rem;
 }
 
 .title {
   text-transform: capitalize;
   margin-bottom: 0.75rem;
-  color: var(--clr-white);
   font-weight: bold;
 }
 
 .text {
-  max-width: 35em;
-  margin: 0 auto;
-  margin-top: 2rem;
-  line-height: 2;
-  color: var(--clr-white);
+  /* max-width: 35em; */
+  width: 690px;
+  margin: 30px auto;
+  line-height: 1.5;
 }
 
 .icon {
   font-size: 3rem;
   margin-top: 1rem;
-  color: var(--clr-primary-5);
+  color: var(--clr-black);
 }
 
 .prev,
@@ -121,7 +120,7 @@ article .h4-reviews {
   }
 }
 
-article {
+blockquote {
   position: absolute;
   top: 0;
   left: 0;
@@ -131,16 +130,16 @@ article {
   transition: var(--transition);
 }
 
-article.activeSlide {
+blockquote.activeSlide {
   opacity: 1;
   transform: translateX(0);
 }
 
-article.lastSlide {
+blockquote.lastSlide {
   transform: translateX(-100%);
 }
 
-article.nextSlide {
+blockquote.nextSlide {
   transform: translateX(100%);
 }
 

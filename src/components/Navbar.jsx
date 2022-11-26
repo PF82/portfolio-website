@@ -14,8 +14,8 @@ import { MdReviews } from "react-icons/md";
 const Navbar = () => {
   return (
     <nav>
-      <img src={logo} alt="logo" className='logo' />
-      <img src={photo} alt="photo" className='photo' />
+      <img src={logo} alt="Logo" className='logo' title="Company Logo" />
+      <img src={photo} alt="Photo" className='photo' />
 
       <ul className="links">
         <li className="nb-1">
@@ -49,23 +49,25 @@ const Navbar = () => {
       </ul>
 
       <i className="social-icons">
-        <a href="https://www.linkedin.com/" target="_blank">
+        <a href="https://www.linkedin.com/" title="LinkedIn" target="_blank">
           <FaLinkedin name="lklas" className="linkedin" />
         </a>
-        <a href="https://www.facebook.com/" target="_blank">
+        <a href="https://www.facebook.com/" title="Facebook" target="_blank">
           <FaFacebook className="facebook" />
         </a>
-        <a href="https://www.whatsapp.com/" target="_blank">
+        <a href="https://www.whatsapp.com/" title="WhatsApp" target="_blank">
           <FaWhatsapp className="whatsapp" />
         </a>
-        <a href="https://www.github.com/" target="_blank">
+        <a href="https://www.github.com/" title="GitHub" target="_blank">
           <FaGithub className="github" />
         </a>
       </i>
 
       <footer>
         <p class="copy-right">© 2022, Powered by </p>
-        <img src={logo} alt="small-logo" className="small-logo" />
+        <a href="https://www.pedro-fernandes.co.uk/" title="Company Logo" target="_blank">
+          <img src={logo} alt="small-logo" className="small-logo" />
+        </a>
       </footer>
     </nav>
   )

@@ -5,11 +5,13 @@
     margin-left: 20%;
     padding: 50px;
     min-height: 100vh;
+    font-size: large;
     color: var(--clr-white);
 }
 
 .list {
     margin-top: 20px;
+    line-height: 1.4;
 }
 
 .item {
@@ -22,8 +24,8 @@
 
 .logo-group {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
     grid-row-gap: 45px;
     grid-column-gap: 45px;
     margin-top: 30px;
@@ -42,7 +44,7 @@
     grid-column: 2 / 3; */
 }
 
-.software-logo .technology-img {
+.software-logo .web-technology-img {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -52,7 +54,7 @@
     padding-top: 30px;
 }
 
-.technology {
+.web-technology {
     display: block;
     text-align: center;
     font-weight: bold;

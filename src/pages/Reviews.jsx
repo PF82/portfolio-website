@@ -28,7 +28,7 @@ const Reviews = () => {
   return (
     <section className='section'>
       <div className='title'>
-        <h2 className='h2-reviews'>REVIEWS</h2>
+        <h1 className='h1-reviews'>REVIEWS</h1>
       </div>
       <div className='section-center'>
         {people.map((person, personIndex) => {
@@ -45,14 +45,14 @@ const Reviews = () => {
           }
 
           return (
-            <article className={position} key={id}>
+            <blockquote cite='content from other sources' className={position} key={id}>
               <img src={image} alt={name} className='person-img' />
               <h4 className='h4-reviews'>{name}</h4>
               <p className='title'>{title}</p>
               <p className='text'>{quote}</p>
-              <p className='date'>{date}</p>
+              <p><small className='date'>{date}</small></p>
               <FaQuoteRight className='icon' />
-            </article>
+            </blockquote>
           );
         })}
         <button className='prev' onClick={() => setIndex(index - 1)}>

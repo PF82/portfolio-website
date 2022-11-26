@@ -9,6 +9,7 @@ import react from "../assets/react.jpg"
 import node from "../assets/node.jpg"
 import vsc from "../assets/visual-studio-code.jpeg"
 import github from "../assets/github.png"
+import sql from "../assets/sql.jpg"
 
 const Services = () => {
   return (
@@ -24,36 +25,40 @@ const Services = () => {
       <h3 className='h3-services'>MAIN SKILLS</h3>
       <div className="logo-group">
         <div className="software-logo">
-          <p className='technology'>HTML</p>
-          <img className='technology-img' src={html} alt="HTML Logo"/>
+          <p className='web-technology'>HTML</p>
+          <img className='web-technology-img' src={html} alt="HTML Logo"/>
         </div>
         <div className="software-logo">
-          <p className='technology'>CSS</p>
-          <img className='technology-img' src={css} alt="CSS Logo"/>
+          <p className='web-technology'>CSS</p>
+          <img className='web-technology-img' src={css} alt="CSS Logo"/>
         </div>
         <div className="software-logo">
-          <p className='technology'>Bootstrap</p>
-          <img className='technology-img' src={bootstrap} alt="Bootstrap Logo"/>
+          <p className='web-technology'>Bootstrap</p>
+          <img className='web-technology-img' src={bootstrap} alt="Bootstrap Logo"/>
         </div>
         <div className="software-logo">
-          <p className='technology'>JavaScript</p>
-          <img className='technology-img' src={js} alt="JavaScript Logo"/>
+          <p className='web-technology'>JavaScript</p>
+          <img className='web-technology-img' src={js} alt="JavaScript Logo"/>
         </div>
         <div className="software-logo">
-          <p className='technology'>React</p>
-          <img className='technology-img' src={react} alt="React Logo"/>
+          <p className='web-technology'>React</p>
+          <img className='web-technology-img' src={react} alt="React Logo"/>
         </div>
         <div className="software-logo">
-          <p className='technology'>Node</p>
-          <img className='technology-img' src={node} alt="Node Logo"/>
+          <p className='web-technology'>Node</p>
+          <img className='web-technology-img' src={node} alt="Node Logo"/>
         </div>
         <div className="software-logo">
-          <p className='technology'>Visual Studio Code</p>
-          <img className='technology-img' src={vsc} alt="Visual Studio Code Logo"/>
+          <p className='web-technology'>SQL</p>
+          <img className='web-technology-img' src={sql} alt="SQL Logo"/>
         </div>
         <div className="software-logo">
-          <p className='technology'>GitHub</p>
-          <img className='technology-img' src={github} alt="GitHub Logo"/>
+          <p className='web-technology'>Visual Studio Code</p>
+          <img className='web-technology-img' src={vsc} alt="Visual Studio Code Logo"/>
+        </div>
+        <div className="software-logo">
+          <p className='web-technology'>GitHub</p>
+          <img className='web-technology-img' src={github} alt="GitHub Logo"/>
         </div>
       </div>
     </section>
