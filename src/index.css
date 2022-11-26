@@ -43,6 +43,7 @@
   --fs-16: 16px;
   --fs-18: 18px;
   --fs-20: 20px;
+  --fs-22: 22px;
 
   /* borders */
   --b-off: none;
@@ -58,6 +59,9 @@
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+
   --max-width: 1170px;
   --fixed-width: 620px;
 }

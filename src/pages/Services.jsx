@@ -7,6 +7,8 @@ import bootstrap from "../assets/bootstrap.jpg"
 import js from "../assets/js.jpg"
 import react from "../assets/react.jpg"
 import node from "../assets/node.jpg"
+import vsc from "../assets/visual-studio-code.jpeg"
+import github from "../assets/github.png"
 
 const Services = () => {
   return (
@@ -44,6 +46,14 @@ const Services = () => {
         <div className="software-logo">
           <p className='technology'>Node</p>
           <img className='technology-img' src={node} alt="Node Logo"/>
+        </div>
+        <div className="software-logo">
+          <p className='technology'>Visual Studio Code</p>
+          <img className='technology-img' src={vsc} alt="Visual Studio Code Logo"/>
+        </div>
+        <div className="software-logo">
+          <p className='technology'>GitHub</p>
+          <img className='technology-img' src={github} alt="GitHub Logo"/>
         </div>
       </div>
     </section>

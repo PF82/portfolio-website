@@ -14,8 +14,8 @@ const containerStyle = {
 };
 
 const location = {
-  lat: 51.562351,
-  lng: -0.117619
+  lat: 51.5544,
+  lng: -0.1147
 };
 
 const Contact = () => {

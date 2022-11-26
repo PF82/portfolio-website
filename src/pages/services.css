@@ -19,10 +19,11 @@
 .h3-services{
     margin-top: 50px;
 }
+
 .logo-group {
     display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
     grid-row-gap: 45px;
     grid-column-gap: 45px;
     margin-top: 30px;
