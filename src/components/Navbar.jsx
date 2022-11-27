@@ -64,7 +64,7 @@ const Navbar = () => {
       </i>
 
       <footer>
-        <p class="copy-right">© 2022, Powered by </p>
+        <p className="copy-right">© 2022, Powered by </p>
         <a href="https://www.pedro-fernandes.co.uk/" title="Company Logo" target="_blank">
           <img src={logo} alt="small-logo" className="small-logo" />
         </a>

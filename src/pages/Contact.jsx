@@ -52,7 +52,7 @@ const Contact = () => {
         <div className='boxes'>
           <div className='box box1'>
             <FaEnvelope className='email' size={30} />
-            <p>pedrofernandes@hotmail.co.uk</p>
+            <p>pf@gmail.com</p>
           </div>
           <div className='box box2'>
             <MdLocationPin className='location' size={30} />
@@ -60,7 +60,7 @@ const Contact = () => {
           </div>
           <div className='box box3'>
             <ImMobile className='phone-number' size={30} />
-            <p>+447 951 255 944</p>
+            <p>+447 951 255 94X</p>
           </div>
         </div>
 
@@ -76,7 +76,7 @@ const Contact = () => {
             <input className='input' type="text" name='Email' placeholder='' required />
           </div>
           <div className='text-input'>
-            <label className='label' for="message">Message
+            <label className='label'>Message
               <textarea
                 className='textarea'
                 name="message"

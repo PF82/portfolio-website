@@ -9,10 +9,13 @@ const Home = () => {
       <figure className='container'>
         <img src={office} className="office-img" alt="Background image" />
         <figcaption className='description'>
-          <h4 className='h4-home'><Greeting /> I'm</h4>
-          <h2 className='h2-home'>Pedro Fernandes.</h2>
-          <h1 className='h1-home'>Junior Web Developer</h1>
-          <h3 className='h3-home'>based in London.</h3>
+          <span className='span1'><Greeting /> I'm</span>
+          <br />
+          <span className='span2'>Pedro Fernandes.</span>
+          <br />
+          <span className='span3'>Junior Web Developer</span>
+          <br />
+          <span className='span4'>based in London.</span>
         </figcaption>
       </figure>
     </section>

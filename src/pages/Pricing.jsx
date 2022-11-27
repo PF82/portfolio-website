@@ -6,97 +6,97 @@ const Pricing = () => {
     <section className='pricing'>
       <h1 className='h1-pricing'>PRICING PLAN</h1>
       <br />
-      <table>
-        <tbody>
-          <tr className='heading'>
-            <b>PERSONAL <br />WEBSITE</b>
-          </tr>
-          <tr>
-            <p><b>Estimated Time<br /></b>40 Hours</p>
-          </tr>
-          <tr>
-            <p><b>Hourly Rate<br /></b>£15</p>
-          </tr>
-          <tr>
-            <p><b>Price<br /></b>£600</p>
-          </tr>
-        </tbody>
+      <div className='table'>
+        <div className='table-body'>
+          <div className='table-row-heading'>
+            <p>PERSONAL <br />WEBSITE</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Estimated Time</b><br />40 Hours</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Hourly Rate</b><br />£15</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Price</b><br />£600</p>
+          </div>
+        </div>
 
-        <tbody>
-          <tr className='heading'>
-            <b>SMALL BUSINESS <br />WEBSITE</b>
-          </tr>
-          <tr>
-            <p><b>Estimated Time<br /></b>80 Hours</p>
-          </tr>
-          <tr>
-            <p><b>Hourly Rate<br /></b>£15</p>
-          </tr>
-          <tr>
-            <p><b>Price<br /></b>£1,200</p>
-          </tr>
-        </tbody>
+        <div className='table-body'>
+          <div className='table-row-heading'>
+            <p>SMALL BUSINESS <br />WEBSITE</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Estimated Time</b><br />80 Hours</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Hourly Rate</b><br />£15</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Price</b><br />£1,200</p>
+          </div>
+        </div>
 
-        <tbody>
-          <tr className='heading'>
-            <b>CORPORATE <br />WEBSITE</b>
-          </tr>
-          <tr>
-            <p><b>Estimated Time<br /></b>120 Hours</p>
-          </tr>
-          <tr>
-            <p><b>Hourly Rate<br /></b>£15</p>
-          </tr>
-          <tr>
-            <p><b>Price<br /></b>£1,800</p>
-          </tr>
-        </tbody>
+        <div className='table-body'>
+          <div className='table-row-heading'>
+            <p>CORPORATE <br />WEBSITE</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Estimated Time</b><br />120 Hours</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Hourly Rate</b><br />£15</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Price</b><br />£1,800</p>
+          </div>
+        </div>
 
-        <tbody>
-          <tr className='heading'>
-            <b>WEB APPLICATION <br />(SIMPLE)</b>
-          </tr>
-          <tr>
-            <p><b>Estimated Time<br /></b>160 Hours</p>
-          </tr>
-          <tr>
-            <p><b>Hourly Rate<br /></b>£15</p>
-          </tr>
-          <tr>
-            <p><b>Price<br /></b>£2,400</p>
-          </tr>
-        </tbody>
+        <div className='table-body'>
+          <div className='table-row-heading'>
+            <p>WEB APPLICATION <br />(SIMPLE)</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Estimated Time</b><br />160 Hours</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Hourly Rate</b><br />£15</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Price</b><br />£2,400</p>
+          </div>
+        </div>
 
-        <tbody>
-          <tr className='heading'>
-            <b>WEB APPLICATION <br />(AVERAGE)</b>
-          </tr>
-          <tr>
-            <p><b>Estimated Time<br /></b>200 Hours</p>
-          </tr>
-          <tr>
-            <p><b>Hourly Rate<br /></b>£15</p>
-          </tr>
-          <tr>
-            <p><b>Price<br /></b>£3,000</p>
-          </tr>
-        </tbody>
+        <div className='table-body'>
+          <div className='table-row-heading'>
+            <p>WEB APPLICATION <br />(AVERAGE)</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Estimated Time</b><br />200 Hours</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Hourly Rate</b><br />£15</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Price</b><br />£3,000</p>
+          </div>
+        </div>
 
-        <tbody>
-          <tr className='heading'>
-            <b>WEB APPLICATION <br />(COMPLEX)</b>
-          </tr>
-          <tr>
-            <p><b>Estimated Time<br /></b>300 Hours</p>
-          </tr>
-          <tr>
-            <p><b>Hourly Rate<br /></b>£15</p>
-          </tr>
-          <tr>
-            <p><b>Price<br /></b>£4,500</p>
-          </tr>
-        </tbody>
-      </table>
+        <div className='table-body'>
+          <div className='table-row-heading'>
+            <p>WEB APPLICATION <br />(COMPLEX)</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Estimated Time</b><br />300 Hours</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Hourly Rate</b><br />£15</p>
+          </div>
+          <div className='table-row'>
+            <p><b>Price</b><br />£4,500</p>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

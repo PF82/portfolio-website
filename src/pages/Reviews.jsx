@@ -47,7 +47,7 @@ const Reviews = () => {
           return (
             <blockquote cite='content from other sources' className={position} key={id}>
               <img src={image} alt={name} className='person-img' />
-              <h4 className='h4-reviews'>{name}</h4>
+              <h4 className='h4-reviews'><b>{name}</b></h4>
               <p className='title'>{title}</p>
               <p className='text'>{quote}</p>
               <p><small className='date'>{date}</small></p>

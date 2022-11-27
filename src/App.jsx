@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout"
+import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Portfolio from "./pages/Portfolio"
@@ -12,8 +12,9 @@ import Contact from "./pages/Contact"
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route >
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="portfolio" element={<Portfolio />} />

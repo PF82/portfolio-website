@@ -5,23 +5,38 @@
     margin-left: 20%;
     padding: 50px;
     min-height: 100vh;
-    font-size: large;
 }
 
 .h1-pricing {
     color: var(--clr-white);
+    font-size: var(--fs-26);
 }
 
-table {
+.table {
     width: 200px;
     height: 250px;
     display: grid;
     grid: repeat(3, 150px) / repeat(3, 1fr);
     grid-gap: 150px 50px;
     border: var(--b-off);
+    font-size: medium;
 }
 
-tr {
+.table-body .table-row-heading {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--clr-black);
+    color: var(--clr-white);
+}
+
+.table-row-heading {
+    font-weight: bold;
+}
+
+.table-row {
     border-collapse: collapse;
     background: var(--clr-white);
     height: 60px;
@@ -33,10 +48,6 @@ tr {
     text-align: center;
 }
 
-.heading {
-    background: var(--clr-black);
-    color: var(--clr-white);
-}
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {

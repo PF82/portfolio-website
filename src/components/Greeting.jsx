@@ -7,7 +7,7 @@ const Greeting = () => {
 
     if (hours >= 7 && hours <= 12) {
         greet = "morning";
-    } else if (hours >= 12 && hours <= 17) {
+    } else if (hours >= 12 && hours <= 16) {
         greet = "afternoon";
     } else {
         greet = "evening";

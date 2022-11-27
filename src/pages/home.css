@@ -30,29 +30,28 @@
     left: 61%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: var(--clr-black);
 }
 
-.h1-home {
-    color: var(--clr-primary-4);
-}
-
-.h4-home {
+.span1 {
+    font-size: var(--fs-16);
     padding-left: 30px;
-    color: var(--clr-black);
 }
 
-.h4-home span {
-    color: var(--clr-black);
-}
-
-.h2-home {
+.span2 {
+    font-size: var(--fs-22);
     padding-left: 10px;
-    color: var(--clr-black);
 }
 
-.h3-home {
+.span3 {
+    color: var(--clr-primary-4);
+    font-size: var(--fs-20);
+}
+
+.span4 {
+    font-size: var(--fs-18);
     padding-left: 20px;
-    color: var(--clr-black);
 }
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */

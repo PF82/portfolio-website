@@ -6,13 +6,13 @@
     margin-left: 20%;
     min-height: 100vh;
     position: relative;
+    font-size: large;
     color: var(--clr-white);
 }
 
 .h1-contact {
     padding-top: 50px;
     margin-left: 50px;
-    font-size: x-large;
 }
 
 .contact-container {
