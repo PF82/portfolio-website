@@ -37,16 +37,17 @@ const Contact = () => {
   }, [])
 
   const [zoom, setZoom] = useState(10)
-    
+
   useEffect(() => {
     setTimeout(() => {
-        setZoom(11)
+      setZoom(11)
     }, 300);
   }, [])
 
   return isLoaded ? (
     <section className='contact-map'>
       <h1 className='h1-contact'>CONTACT ME</h1>
+      <div className='underline'></div>
 
       <div className='contact-container'>
         <div className='boxes'>

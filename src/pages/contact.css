@@ -11,12 +11,22 @@
 }
 
 .h1-contact {
-    padding-top: 50px;
-    margin-left: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.underline {
+    height: 5px;
+    width: 80px;
+    margin-top: 10px;
+    background: var(--clr-primary-5);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5px;
 }
 
 .contact-container {
-    margin: 20px 50px;
+    margin: 40px 50px;
 }
 
 .boxes {

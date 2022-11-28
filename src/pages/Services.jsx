@@ -15,8 +15,10 @@ const Services = () => {
   return (
     <section className='services'>
       <h1 className='h1-services'>SERVICES</h1>
+      <div className='underline'></div>
+
       <ul className='list'>
-        <li className='item'>Personal Websites</li>
+        <li className='item'>Personal Websites and Blogs</li>
         <li className='item'>Small Business Websites</li>
         <li className='item'>Corporate Websites</li>
         <li className='item'>Web Applications</li>

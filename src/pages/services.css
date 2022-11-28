@@ -2,23 +2,39 @@
 
 /* the value of the margin-left property should match the value of the sidebar's width property */
 .services {
-    margin-left: 20%;
-    padding: 50px;
-    min-height: 100vh;
+    position: absolute;
+    left: 60%;
+    top: 500px;
+    margin: 50px 0;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-size: large;
     color: var(--clr-white);
 }
 
+.h1-services,
+.list,
+.h3-services {
+    text-align: center;
+    list-style-position: inside;
+}
+
+.underline {
+    height: 5px;
+    width: 80px;
+    margin-top: 10px;
+    background: var(--clr-primary-5);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5px;
+}
+
 .list {
-    margin-top: 20px;
+    margin-top: 30px;
     line-height: 1.4;
 }
 
-.item {
-    margin-left: 18px;
-}
-
-.h3-services{
+.h3-services {
     margin-top: 50px;
 }
 
@@ -29,6 +45,7 @@
     grid-row-gap: 45px;
     grid-column-gap: 45px;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .software-logo {

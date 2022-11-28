@@ -2,11 +2,44 @@
 
 /* the value of the margin-left property should match the value of the sidebar's width property */
 .about {
-    margin-left: 20%;
-    padding: 50px;
-    min-height: 100vh;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 1000px;
     font-size: large;
     color: var(--clr-white);
+}
+
+.h1-about {
+    text-align: center;
+}
+
+.underline {
+    height: 5px;
+    width: 80px;
+    margin: 10px 0;
+    background: var(--clr-primary-5);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5px;
+}
+
+.link:link {
+    text-decoration: none;
+}
+
+.link:visited {
+    color: var(--clr-magenta);
+}
+
+.link:hover {
+    color: var(--clr-blue);
+}
+
+.link:active {
+    color: var(--clr-green);
 }
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */

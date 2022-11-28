@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav>
       <img src={logo} alt="Logo" className='logo' title="Company Logo" />
-      <img src={photo} alt="Photo" className='photo' />
+      <img src={photo} alt="Photo" className='photo' title="Photo" />
 
       <ul className="links">
         <li className="nb-1">
