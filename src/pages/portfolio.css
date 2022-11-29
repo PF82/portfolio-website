@@ -2,11 +2,28 @@
 
 /* the value of the margin-left property should match the value of the sidebar's width property */
 .portfolio {
-    margin-left: 20%;
-    padding: 50px;
-    min-height: 100vh; 
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-size: large;
     color: var(--clr-white);
+}
+
+.h1-reviews {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.underline {
+    height: 5px;
+    width: 80px;
+    margin-top: 10px;
+    background: var(--clr-primary-5);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5px;
 }
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */

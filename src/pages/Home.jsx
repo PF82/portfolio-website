@@ -2,6 +2,7 @@ import React from 'react'
 import "../pages/home.css"
 import office from "../assets/office.jpg"
 import Greeting from "../components/Greeting"
+import { FaDownload } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -17,6 +18,9 @@ const Home = () => {
           <br />
           <span className='span4'>based in London.</span>
         </figcaption>
+        <button className='button'>
+          <i><FaDownload className="fadownload" /></i>Download Resume
+        </button>
       </figure>
     </section>
   )

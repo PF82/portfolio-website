@@ -27,10 +27,9 @@ const Reviews = () => {
 
   return (
     <section className='section'>
-      <div className='title'>
-        <h1 className='h1-reviews'>REVIEWS</h1>
-        <div className='underline'></div>
-      </div>
+      <h1 className='h1-reviews'>REVIEWS</h1>
+      <div className='underline'></div>
+
       <div className='section-center'>
         {people.map((person, personIndex) => {
           const { id, image, name, title, quote, date } = person;

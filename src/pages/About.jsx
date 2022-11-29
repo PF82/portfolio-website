@@ -24,18 +24,18 @@ const About = () => {
           className='link'
           href="https://www.linkedin.com/"
           target="_blank"><b>LinkedIn</b>
-        </a>{' '}or by clicking the button below to download my CV.
+        </a>{' '}or by clicking on the button in the 'Home' section to download my CV.
         If you're interested in my open source work, check{' '}
         <a
           className='link'
           href="https://www.github.com/"
           target="_blank"><b>GitHub</b>
-        </a>.{' '}And, if you want to chat, send me a message on{' '}
+        </a>.{' '}And, if you want to chat, please feel free to send me a message on{' '}
         <a
           className='link'
           href="https://www.facebook.com/"
           target="_blank"><b>Facebook</b>
-        </a>{' '}or submit it through the Contact section on this website.
+        </a>{' '}or submit it through the 'Contact' section on this website.
       </p>
     </section>
   )
