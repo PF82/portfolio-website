@@ -7,7 +7,7 @@
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 1000px;
+    width: 70vw;
     font-size: large;
     color: var(--clr-white);
 }

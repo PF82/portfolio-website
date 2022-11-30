@@ -14,7 +14,7 @@ const Home = () => {
           <br />
           <span className='span2'>Pedro Fernandes.</span>
           <br />
-          <span className='span3'>Junior Web Developer</span>
+          <span className='span3'>Junior Front-End Developer</span>
           <br />
           <span className='span4'>based in London.</span>
         </figcaption>

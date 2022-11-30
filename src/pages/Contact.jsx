@@ -1,6 +1,4 @@
-import React from 'react'
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../pages/contact.css";
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { FaEnvelope } from "react-icons/fa";
@@ -19,29 +17,34 @@ const location = {
 };
 
 const Contact = () => {
+
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: "AIzaSyAzHIUbbKOWplVLDe8vYCiforDkjCgzVkY"
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
   })
 
-  const [map, setMap] = React.useState(null)
+  // const [map, setMap] = React.useState(null)
 
-  const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(location);
-    map.fitBounds(bounds);
-    setMap(map)
-  }, [])
+  // const onLoad = React.useCallback(function callback(map) {
+  //   const bounds = new window.google.maps.LatLngBounds(location);
+  //   map.fitBounds(bounds);
+  //   setMap(map)
+  // }, [])
 
-  const onUnmount = React.useCallback(function callback(map) {
-    setMap(null)
-  }, [])
+  // const onUnmount = React.useCallback(function callback(map) {
+  //   setMap(null)
+  // }, [])
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const [zoom, setZoom] = useState(10)
 
   useEffect(() => {
     setTimeout(() => {
       setZoom(11)
-    }, 300);
+    }, 1000);
   }, [])
 
   return isLoaded ? (
@@ -61,7 +64,7 @@ const Contact = () => {
           </div>
           <div className='box box3'>
             <ImMobile className='phone-number' size={30} />
-            <p>+447 951 255 94X</p>
+            <p>+447 951 255 944</p>
           </div>
         </div>
 
@@ -69,18 +72,36 @@ const Contact = () => {
 
         <form className='contact-form' method='post' action="/action_page.php" target="_blank">
           <div className='text-input'>
-            <label className='label'>Name</label>
-            <input className='input' type="text" name='Name' placeholder='' required />
+            <label className='label'>Name:</label>
+            <input
+              className='input'
+              type="text"
+              name='Name'
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder=''
+              required
+            />
           </div>
           <div className='text-input'>
-            <label className='label'>Email</label>
-            <input className='input' type="text" name='Email' placeholder='' required />
+            <label className='label'>Email:</label>
+            <input
+              className='input'
+              type="text"
+              name='Email'
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder=''
+              required
+            />
           </div>
           <div className='text-input'>
-            <label className='label'>Message
+            <label className='label'>Message:
               <textarea
                 className='textarea'
                 name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 rows="1"
                 cols="30"
                 placeholder=''>
@@ -101,8 +122,8 @@ const Contact = () => {
             mapContainerStyle={containerStyle}
             center={location}
             zoom={zoom}
-            onLoad={onLoad}
-            onUnmount={onUnmount}
+          // onLoad={onLoad}
+          // onUnmount={onUnmount}
           >
             { /* Child components, such as markers, info windows, etc. */}
             <Marker position={location} />

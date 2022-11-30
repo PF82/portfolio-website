@@ -1,14 +1,15 @@
 import React from 'react'
-// import CocktailList from '../components/CocktailList'
+// import { useState } from 'react'
 import "../pages/portfolio.css"
+// import data from '../data/portfolio'
+
 
 const Portfolio = () => {
+
   return (
     <section className='portfolio'>
-      <h1 className='h1-portfolio'>PORTFOLIO</h1>
+         <h1 className='h1-portfolio'>PORTFOLIO</h1>
       <div className='underline'></div>
-
-      {/* <CocktailList /> */}
     </section>
   )
 }

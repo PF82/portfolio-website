@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import logo from "../assets/pf.jpg"
 import photo from "../assets/photo.jpg"
@@ -8,7 +8,7 @@ import "../components/navbar.css"
 
 import { FaHome, FaUser, FaWindows, FaEnvelope, FaWhatsapp, FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
-import { RiMoneyPoundCircleFill } from "react-icons/ri";
+// import { RiMoneyPoundCircleFill } from "react-icons/ri";
 import { MdReviews } from "react-icons/md";
 
 const Navbar = () => {
@@ -34,10 +34,10 @@ const Navbar = () => {
           <MdOutlineMiscellaneousServices className="miscellaneousservices" />
           <Link to="/services">Services</Link>
         </li>
-        <li className="nb-1">
+        {/* <li className="nb-1">
           <RiMoneyPoundCircleFill className="circlefill" />
           <Link to="/pricing">Pricing</Link>
-        </li>
+        </li> */}
         <li className="nb-1">
           <MdReviews className="mdreviews" />
           <Link to="/reviews">Reviews</Link>
@@ -52,9 +52,9 @@ const Navbar = () => {
         <a href="https://www.linkedin.com/" title="LinkedIn" target="_blank">
           <FaLinkedin name="lklas" className="linkedin" />
         </a>
-        <a href="https://www.facebook.com/" title="Facebook" target="_blank">
+        {/* <a href="https://www.facebook.com/" title="Facebook" target="_blank">
           <FaFacebook className="facebook" />
-        </a>
+        </a> */}
         <a href="https://www.whatsapp.com/" title="WhatsApp" target="_blank">
           <FaWhatsapp className="whatsapp" />
         </a>

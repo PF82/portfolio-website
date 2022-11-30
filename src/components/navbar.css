@@ -1,4 +1,4 @@
-/* responsive sidebar */
+/* responsive naviagtion sidebar */
 
 nav {
     margin: 0;
@@ -45,7 +45,7 @@ nav {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    max-width: 60%;
     border-radius: 50%;
 }
 
@@ -57,7 +57,7 @@ nav {
 .fauser,
 .fawindows,
 .miscellaneousservices,
-.circlefill,
+/* .circlefill, */
 .mdreviews,
 .faenvelope {
     display: inline-flex;
@@ -97,9 +97,9 @@ nav {
     color: #0e76a8;
 }
 
-.facebook {
+/* .facebook {
     color: #3b5998;
-}
+} */
 
 .whatsapp {
     color: #25d366;
@@ -110,7 +110,7 @@ nav {
 }
 
 .linkedin,
-.facebook,
+/* .facebook, */
 .whatsapp,
 .github {
     width: 35px;
