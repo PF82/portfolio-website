@@ -1,5 +1,5 @@
+import React, { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Portfolio from "./pages/Portfolio"
@@ -7,13 +7,15 @@ import Services from "./pages/Services"
 // import Pricing from "./pages/Pricing"
 import Reviews from "./pages/Reviews"
 import Contact from "./pages/Contact"
+import NoPage from "./pages/NoPage"
+import Layout from './components/Layout';
 
 function App() {
   return (
+    // https://www.w3schools.com/react/react_router.asp
     <BrowserRouter>
-      <Navbar />
       <Routes>
-        <Route >
+        <Route path='/' element={<Layout />} >
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="portfolio" element={<Portfolio />} />
@@ -21,6 +23,7 @@ function App() {
           {/* <Route path="pricing" element={<Pricing />} /> */}
           <Route path="reviews" element={<Reviews />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -55,11 +55,11 @@ const Navbar = () => {
         {/* <a href="https://www.facebook.com/" title="Facebook" target="_blank">
           <FaFacebook className="facebook" />
         </a> */}
-        <a href="https://www.whatsapp.com/" title="WhatsApp" target="_blank">
-          <FaWhatsapp className="whatsapp" />
-        </a>
         <a href="https://www.github.com/" title="GitHub" target="_blank">
           <FaGithub className="github" />
+        </a>
+        <a href="https://www.whatsapp.com/" title="WhatsApp" target="_blank">
+          <FaWhatsapp className="whatsapp" />
         </a>
       </i>
 

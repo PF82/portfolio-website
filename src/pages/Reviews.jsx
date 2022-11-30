@@ -45,7 +45,7 @@ const Reviews = () => {
           }
 
           return (
-            <blockquote cite='quotes from people' className={position} key={id}>
+            <blockquote cite='testimonies' className={position} key={id}>
               {/* h4 should be cite element */}
               <img src={image} alt={name} className='person-img' />
               <h4 className='h4-reviews'><b>{name}</b></h4>

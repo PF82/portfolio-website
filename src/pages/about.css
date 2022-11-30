@@ -9,6 +9,8 @@
     transform: translate(-50%, -50%);
     width: 70vw;
     font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
     color: var(--clr-white);
 }
 

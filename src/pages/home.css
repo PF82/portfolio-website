@@ -19,7 +19,7 @@
 }
 
 .office-img {
-    width: 50vw;
+    width: 54vw;
     display: block;
     height: auto;
     margin: 0 auto;
@@ -29,30 +29,26 @@
 .description {
     position: absolute;
     top: 75%;
-    left: 67%;
+    left: 69%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-weight: bold;
     color: var(--clr-black);
 }
 
-.span1 {
-    font-size: var(--fs-16);
+.h5-home {
     padding-left: 40px;
 }
 
-.span2 {
-    font-size: var(--fs-22);
+.h2-home {
     padding-left: 20px;
 }
 
-.span3 {
+.h3-home {
     color: var(--clr-primary-4);
-    font-size: var(--fs-20);
 }
 
-.span4 {
-    font-size: var(--fs-18);
+.h4-home {
     padding-left: 30px;
 }
 

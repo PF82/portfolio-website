@@ -1,7 +1,11 @@
-const projects = [
+const work = [
     {
         id: 1,
         name: 'Portfolio Website',
+        client: 'FreeCodeCamp',
+        web_technology: 'React JS',
+        date: '25th December 2022',
+
         highlight_features: <ul>
             <li>Responsive web design</li>
             <li>Animations</li>
@@ -10,6 +14,21 @@ const projects = [
             <li>Sticky navigation</li>
             <li>Mobile Navigation</li>
             <li>Scroll To Top</li>
+        </ul>,
+
+        development_time: '80 Hours',
+        price: 600,
+        image: '../assets/pf.jpg',
+        download: 'insert link'
+    },
+    {
+        id: 2,
+        name: 'Portfolio Website',
+        client: 'FreeCodeCamp',
+        web_technology: 'React JS',
+        date: '25th December 2022',
+
+        highlight_features: <ul>
             <li>Fast loading speed</li>
             <li>Support for Bootstrap and SASS</li>
             <li>Contact form</li>
@@ -19,21 +38,17 @@ const projects = [
             <li>Premium and dedicated support, etc.</li>
             <li>Free updates</li>
         </ul>,
-        client: 'FreeCodeCamp',
-        date: '25th December 2022',
-        web_technology: 'React JS',
+
         development_time: '80 Hours',
         price: 600,
-        img: './images/item-1.jpeg',
+        image: '../assets/pf.jpg',
         download: 'insert link'
-    },
-
-
-    {
     },
 ];
 
-export default projects;
+export default work;
+
+
 
 
 

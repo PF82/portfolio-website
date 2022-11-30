@@ -101,12 +101,12 @@ nav {
     color: #3b5998;
 } */
 
-.whatsapp {
-    color: #25d366;
-}
-
 .github {
     color: var(--clr-white);
+}
+
+.whatsapp {
+    color: #25d366;
 }
 
 .linkedin,

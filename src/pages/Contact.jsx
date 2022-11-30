@@ -39,6 +39,35 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  // const [inputs, setInputs] = useState({});
+
+  // const handleChange = (event) => {
+  //   const name = event.target.name;
+  //   const email = event.target.email;
+  //   const message = event.target.message;
+  //   const value = event.target.value;
+  //   setInputs(values => ({ ...values, [name]: value, [email]: value, [message]: value }))
+  // }
+
+  const handleSubmit = (e) => {
+    // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
+    e.preventDefault();
+    alert(`
+Dear ${name}, 
+
+I have just received your message. Thank you very much for writing to me. 
+
+I'm working on your request and will get in touch as soon as possible. 
+
+Should you have any further queries and/or any urgent issues, please contact me on +447 951 255 944. I am happy to be of your assistance. 
+
+Kind regards, 
+PF
+    `)
+    // alert(`Form details submitted: (Name: ${name}, Email: ${email}, Message: ${message})`)
+    // alert(inputs);
+  }
+
   const [zoom, setZoom] = useState(10)
 
   useEffect(() => {
@@ -70,15 +99,18 @@ const Contact = () => {
 
         <hr className='line' />
 
-        <form className='contact-form' method='post' action="/action_page.php" target="_blank">
+        {/* https://www.w3schools.com/react/react_forms.asp */}
+        <form onSubmit={handleSubmit} className='contact-form' method='post' action="/action_page.php" target="_blank">
           <div className='text-input'>
             <label className='label'>Name:</label>
             <input
               className='input'
-              type="text"
-              name='Name'
+              type='text'
+              name='name'
               value={name}
-              onChange={(e) => setName(e.target.value)}
+              onChange={(e) => setName(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1))}
+              // value={inputs.name || ''}
+              // onChange={handleChange}
               placeholder=''
               required
             />
@@ -87,10 +119,12 @@ const Contact = () => {
             <label className='label'>Email:</label>
             <input
               className='input'
-              type="text"
-              name='Email'
+              type='text'
+              name='email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              // value={inputs.email || ''}
+              // onChange={handleChange}
               placeholder=''
               required
             />
@@ -99,19 +133,25 @@ const Contact = () => {
             <label className='label'>Message:
               <textarea
                 className='textarea'
-                name="message"
+                name='message'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
+                // value={inputs.message || ''}
+                // onChange={handleChange}
                 rows="1"
                 cols="30"
-                placeholder=''>
+                placeholder=''
+                required
+              >
               </textarea>
             </label>
           </div>
-
-          <button className='submit' type="submit">
-            <IoIosSend className='send' size={30} />
-            Submit</button>
+          <button
+            className='submit'
+            type="submit"
+          >
+            <IoIosSend className='send' size={30} />Submit
+          </button>
         </form>
 
         <hr className='line' />
