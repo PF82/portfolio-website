@@ -1,21 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
+import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Portfolio from "./pages/Portfolio"
-import Services from "./pages/Services"
-// import Pricing from "./pages/Pricing"
-import Reviews from "./pages/Reviews"
-import Contact from "./pages/Contact"
-import NoPage from "./pages/NoPage"
 import Layout from './components/Layout';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Services from "./pages/Services";
+// import Pricing from "./pages/Pricing";
+import Reviews from "./pages/Reviews";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
 
-function App() {
+
+export default function App() {
   return (
     // https://www.w3schools.com/react/react_router.asp
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Layout />} >
+        <Route path="/" element={<Layout />} >
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="portfolio" element={<Portfolio />} />
@@ -29,5 +31,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

@@ -1,11 +1,12 @@
 const work = [
     {
         id: 1,
-        name: 'Portfolio Website',
+        image: '../assets/pf.jpg',
+        title: 'Portfolio Website',
         client: 'FreeCodeCamp',
         web_technology: 'React JS',
-        date: '25th December 2022',
 
+        date: '25th December 2022',
         highlight_features: <ul>
             <li>Responsive web design</li>
             <li>Animations</li>
@@ -18,12 +19,12 @@ const work = [
 
         development_time: '80 Hours',
         price: 600,
-        image: '../assets/pf.jpg',
+    
         download: 'insert link'
     },
     {
         id: 2,
-        name: 'Portfolio Website',
+        title: 'Portfolio Website',
         client: 'FreeCodeCamp',
         web_technology: 'React JS',
         date: '25th December 2022',

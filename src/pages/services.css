@@ -4,8 +4,7 @@
 .services {
     position: absolute;
     left: 60%;
-    top: 500px;
-    margin: 50px 0;
+    top: 650px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: large;
@@ -14,9 +13,12 @@
 
 .h1-services,
 .list,
-.h3-services {
+.h3-services,
+.list-skills {
     text-align: center;
     list-style-position: inside;
+    width: 900px;
+    border: var(--b-on);
 }
 
 .underline {
@@ -29,9 +31,15 @@
     border-radius: 2.5px;
 }
 
-.list {
+.list,
+.list-skills {
     margin-top: 30px;
     line-height: 1.4;
+}
+
+.h1-services,
+.h3-skills {
+    margin-top: 50px;
 }
 
 .h3-services {
