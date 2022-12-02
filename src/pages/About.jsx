@@ -7,21 +7,16 @@ const About = () => {
       <h1 className='h1-about'>ABOUT ME</h1>
       <div className='underline'></div>
       <br />
-      <p>Working in office and on-site in previous positions, I managed (under minimum supervision) all
-        the costs relating to Building and Civil Engineering projects. From the initial calculations to
-        the final figures, I minimized the costs of the projects and enhanced value for money, while still
-        achieving the required standards and quality as well as completing the projects within the original
-        budget and on time.</p>
+      <p>A results-driven and self-motivated Junior Front-End Developer with a passion for creating visually
+        aesthetic, responsive and accessible websites and web applications. Basic knowledge in a wide variety of
+        web technologies as well as the principles and techniques of building websites and applications from
+        inception through completion. Ability to adapt in both self-starting and collaborative environments while
+        staying focused on achieving the required standards and quality under strict deadlines.
+        .</p>
       <br />
-      <p>I am pleased for having the opportunity to work for some great companies within the construction industry
-        and I really enjoyed working as an Estimator/Quantity Surveyor and as an Architectural Technician.
-        However, taking into consideration that I was made redundant 3 times in a span of 14 years, I decided
-        to reconsider my career options.
-      </p>
-      <br />
-      <p>And, that was when Web Development come into play in my life, which was through a friend that is a Full Stack Web
-        Developer. Since then, I never looked back. He was my mentor throughout the code learning process, using
-        an interacitve learning web platform.
+      <p>Worked through 1300+ hours of freecodecamp structure with the assistance of a friend that is working
+        as a Full Stack Web Developer, learning Responsive Web Design, JavaScript Algorithms
+        and Data Structures, Front End Development Libraries and Data Visualization.
       </p>
       <br />
       <p>You can find more about my formal education, specific training and work experience on{' '}

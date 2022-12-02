@@ -7,9 +7,12 @@ import bootstrap from "../assets/bootstrap.jpg"
 import js from "../assets/js.jpg"
 import react from "../assets/react.jpg"
 import node from "../assets/node.jpg"
+import sql from "../assets/sql.jpg"
+import google from "../assets/google-cloud.jpg"
+import netlify from "../assets/netlify.png"
 import vsc from "../assets/visual-studio-code.jpeg"
 import github from "../assets/github.png"
-import sql from "../assets/sql.jpg"
+
 
 const Services = () => {
   return (
@@ -17,7 +20,7 @@ const Services = () => {
       <h1 className='h1-services'>SERVICES</h1>
       <div className='underline'></div>
 
-      <ul className='list'>
+      <ul className='list-services'>
         <li className='item'>Personal Websites and Blogs</li>
         <li className='item'>Small Business Websites</li>
         <li className='item'>Corporate Websites</li>
@@ -41,63 +44,77 @@ const Services = () => {
         <li className='item'>Maintaining, optimizing, troubleshooting, and improving websites and applications</li>
       </ul>
 
-      <div className="logo-group">
-        <div className='languages'>Programming Languages
-          <div className="software-logo">
-            <p className='web-technology'>HTML</p>
-            <img className='web-technology-img' src={html} alt="HTML Logo" />
-          </div>
-          <div className="software-logo">
-            <p className='web-technology'>CSS</p>
-            <img className='web-technology-img' src={css} alt="CSS Logo" />
-          </div>
-          <div className="software-logo">
-            <p className='web-technology'>Bootstrap</p>
-            <img className='web-technology-img' src={bootstrap} alt="Bootstrap Logo" />
-          </div>
-          <div className="software-logo">
-            <p className='web-technology'>JavaScript</p>
-            <img className='web-technology-img' src={js} alt="JavaScript Logo" />
-          </div>
+      <h4 className='h4-browser'>BROWSER SOFTWARE</h4>
+      <div className='browser-1'>
+        <div className="title-logo">
+          <p className='web-technology-title'>HTML</p>
+          <img className='web-technology-logo' src={html} alt="HTML Logo" />
         </div>
-        <div className='frameworks'>Frameworks
-          <div className="software-logo">
-            <p className='web-technology'>React JS</p>
-            <img className='web-technology-img' src={react} alt="React Logo" />
-          </div>
-          <div className="software-logo">
-            <p className='web-technology'>Node JS</p>
-            <img className='web-technology-img' src={node} alt="Node Logo" />
-          </div>
+        <div className="title-logo">
+          <p className='web-technology-title'>CSS</p>
+          <img className='web-technology-logo' src={css} alt="CSS Logo" />
         </div>
-        <div className='databases'>Databases
-          <div className="software-logo">
-            <p className='web-technology'>SQL</p>
-            <img className='web-technology-img' src={sql} alt="SQL Logo" />
-          </div>
+        <div className="title-logo">
+          <p className='web-technology-title'>Bootstrap</p>
+          <img className='web-technology-logo' src={bootstrap} alt="Bootstrap Logo" />
         </div>
-        <div className='databases'>Cloud Infrastructure
-          <div className="software-logo">
-            <p className='web-technology'>Google Cloud</p>
-            <img className='web-technology-img' src={sql} alt="SQL Logo" />
-          </div>
-          <div className="software-logo">
-            <p className='web-technology'>AWS</p>
-            <img className='web-technology-img' src={sql} alt="SQL Logo" />
-          </div>
+           </div>
+
+      <div className='browser-2'>
+             <div className="title-logo">
+          <p className='web-technology-title'>JavaScript</p>
+          <img className='web-technology-logo' src={js} alt="JavaScript Logo" />
         </div>
-        <div className='utilities'>Utilities
-          <div className="software-logo">
-            <p className='web-technology'>Visual Studio Code</p>
-            <img className='web-technology-img' src={vsc} alt="Visual Studio Code Logo" />
-          </div>
-          <div className="software-logo">
-            <p className='web-technology'>GitHub</p>
-            <img className='web-technology-img' src={github} alt="GitHub Logo" />
-          </div>
+        <div className="title-logo">
+          <p className='web-technology-title'>React JS</p>
+          <img className='web-technology-logo' src={react} alt="React JS Logo" />
         </div>
       </div>
-    </section>
+
+      <h4 className='h4-server'>SERVER SOFTWARE</h4>
+      <div className='server'>
+        <div className="title-logo">
+          <p className='web-technology-title'>Node JS</p>
+          <img className='web-technology-logo' src={node} alt="Node JS Logo" />
+        </div>
+      </div>
+
+      <h4 className='h4-database'>DATABASE SOFTWARE</h4>
+      <div className='database'>
+        <div className="title-logo">
+          <p className='web-technology-title'>SQL</p>
+          <img className='web-technology-logo' src={sql} alt="SQL Logo" />
+        </div>
+      </div>
+
+      <h4 className='h4-database'>CLOUD COMPUTING PLATFORMS</h4>
+      <div className='platform'>
+        <div className="title-logo">
+          <p className='web-technology-title'>Google Cloud</p>
+          <img className='web-technology-logo' src={google} alt="Google Cloud Logo" style={{width:"150px"}}/>
+        </div>
+        <div className="title-logo">
+          <p className='web-technology-title'>Netlify</p>
+          <img className='web-technology-logo' src={netlify} alt="Netlify Logo" />
+        </div>
+        {/* <div className="title-logo">
+          <p className='web-technology-title'>AWS</p>
+          <img className='web-technology-logo' src={sql} alt="AWS Logo" />
+        </div> */}
+      </div>
+
+      <h4 className='h4-database'>SOURCE-CODE EDITOR AND VERSION CONTROL SOFTWARE</h4>
+      <div className='editor-control'>
+        <div className="title-logo">
+          <p className='web-technology-title'>Visual Studio Code</p>
+          <img className='web-technology-logo' src={vsc} alt="Visual Studio Code Logo" />
+        </div>
+        <div className="title-logo">
+          <p className='web-technology-title'>GitHub</p>
+          <img className='web-technology-logo' src={github} alt="GitHub Logo" />
+        </div>
+      </div>
+    </section >
   )
 }
 
