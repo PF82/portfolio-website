@@ -1,7 +1,7 @@
 /* home */
 
 /* the value of the margin-left property should match the value of the sidebar's width property */
-.home {
+.section {
     margin-left: 20%;
     padding: 50px;
     min-height: 100vh;
@@ -10,7 +10,7 @@
     /* font-size: large; */
 }
 
-.container {
+.figure {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -18,7 +18,7 @@
     transform: translate(-50%, -50%);
 }
 
-.office-img {
+.img {
     width: 54vw;
     display: block;
     height: auto;
@@ -26,7 +26,7 @@
     border-radius: 50%;
 }
 
-.description {
+.figcaption {
     position: absolute;
     top: 75%;
     left: 69%;
@@ -36,19 +36,19 @@
     color: var(--clr-black);
 }
 
-.h5-home {
+.h5 {
     padding-left: 40px;
 }
 
-.h2-home {
+.h2 {
     padding-left: 20px;
 }
 
-.h3-home {
+.h3 {
     color: var(--clr-primary-4);
 }
 
-.h4-home {
+.h4 {
     padding-left: 30px;
 }
 
@@ -73,13 +73,13 @@
     color: var(--clr-black);
 }
 
-.fadownload {
+.i {
     margin-right: 5px;
 }
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
-    .home {
+    .section {
         margin-left: 0;
     }
 }

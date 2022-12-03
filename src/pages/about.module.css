@@ -1,34 +1,52 @@
-/* portfolio */
+/* about */
 
 /* the value of the margin-left property should match the value of the sidebar's width property */
-.portfolio {
+.section {
     position: absolute;
     left: 60%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 70vw;
     font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
     color: var(--clr-white);
 }
 
-.h1-reviews {
+h1 {
     text-align: center;
-    margin-bottom: 10px;
 }
 
-.underline {
+.div {
     height: 5px;
     width: 80px;
-    margin-top: 10px;
+    margin: 10px 0;
     background: var(--clr-primary-5);
     margin-left: auto;
     margin-right: auto;
     border-radius: 2.5px;
 }
 
+.a:link {
+    text-decoration: none;
+}
+
+.a:visited {
+    color: var(--clr-magenta);
+}
+
+.a:hover {
+    color: var(--clr-blue);
+}
+
+.a:active {
+    color: var(--clr-green);
+}
+
 /* on screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
-    .portfolio {
+    .section {
         margin-left: 0;
     }
 }

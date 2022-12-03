@@ -11,7 +11,16 @@ nav {
     color: var(--clr-white);
     font-size: var(--fs-20);
     font-weight: bold;
-    border: var(--b-off);
+    border: var(--b-on);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    margin: auto;
+    min-height: 100vh;
+    border: var(--b-on);
 }
 
 .logo {
@@ -49,45 +58,45 @@ nav {
     border-radius: 50%;
 }
 
-.links {
+.ul {
     margin-top: 30px;
 }
 
-.fahome,
-.fauser,
-.fawindows,
-.miscellaneousservices,
-/* .circlefill, */
-.mdreviews,
-.faenvelope {
+.home,
+.about,
+.portfolio,
+.services,
+/* .pricing, */
+.reviews,
+.contact {
     display: inline-flex;
     vertical-align: middle;
     margin-bottom: 4px;
 }
 
-.nb-1 {
+.li {
     padding-left: 60px;
     border: var(--b-off);
     line-height: 40px;
 }
 
-.nb-1 a {
+.li a {
     padding-left: 10px;
     color: var(--clr-white);
     text-decoration: none;
 }
 
-.nb-1:hover {
+.li:hover {
     color: var(--clr-black);
     background-color: var(--clr-white);
 }
 
-.nb-1 a:hover {
+.li a:hover {
     color: var(--clr-black);
     font-weight: bold;
 }
 
-.social-icons {
+.i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +135,7 @@ footer {
     border: var(--b-off);
 }
 
-.small-logo {
+.smallLogo {
     margin-top: 5px;
     margin-left: 3px;
     width: 30px;

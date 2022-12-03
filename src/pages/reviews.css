@@ -16,6 +16,12 @@
   margin-bottom: 10px;
 }
 
+/* .title .h1-reviews {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+} */
+
 .underline {
   height: 5px;
   width: 80px;

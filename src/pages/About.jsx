@@ -1,11 +1,11 @@
 import React from 'react'
-import "../pages/about.css"
+import styles from './about.module.css'
 
 const About = () => {
   return (
-    <section className='about'>
-      <h1 className='h1-about'>ABOUT ME</h1>
-      <div className='underline'></div>
+    <section className={styles.section}>
+      <h1 className={styles.h1}>ABOUT ME</h1>
+      <div className={styles.div}></div>
       <br />
       <p>A results-driven and self-motivated Junior Front-End Developer with a passion for creating visually
         aesthetic, responsive and accessible websites and web applications. Basic knowledge in a wide variety of
@@ -21,7 +21,7 @@ const About = () => {
       <br />
       <p>You can find more about my formal education, specific training and work experience on{' '}
         <a
-          className='link'
+          className={styles.a}
           href="https://www.linkedin.com/"
           target="_blank"><b>LinkedIn</b>
         </a>{' '}or by clicking on the button in the 'Home' section to download my resume.

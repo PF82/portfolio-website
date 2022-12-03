@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import "../pages/contact.css";
+import styles from './contact.module.css'
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { FaEnvelope } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
@@ -77,34 +77,34 @@ PF
   }, [])
 
   return isLoaded ? (
-    <section className='contact-map'>
-      <h1 className='h1-contact'>CONTACT ME</h1>
-      <div className='underline'></div>
+    <section className={styles.section}>
+      <h1 className={styles.h1}>CONTACT ME</h1>
+      <div className={styles.div}></div>
 
-      <div className='contact-container'>
-        <div className='boxes'>
-          <div className='box box1'>
-            <FaEnvelope className='email' size={30} />
+      <div className={styles.container}>
+        <div className={styles.flexbox}>
+          <div className={styles.box + ' ' + styles.box1}>
+            <FaEnvelope className={styles.email} size={30} />
             <p>pf@gmail.com</p>
           </div>
-          <div className='box box2'>
-            <MdLocationPin className='location' size={30} />
+          <div className={styles.box + ' ' + styles.box2}>
+            <MdLocationPin className={styles.location} size={30} />
             <p>London, UK</p>
           </div>
-          <div className='box box3'>
-            <ImMobile className='phone-number' size={30} />
+          <div className={styles.box + ' ' + styles.box3}>
+            <ImMobile className={styles.phoneNr} size={30} />
             <p>+447 951 255 944</p>
           </div>
         </div>
 
-        <hr className='line' />
+        <hr />
 
         {/* https://www.w3schools.com/react/react_forms.asp */}
-        <form onSubmit={handleSubmit} className='contact-form' method='post' action="/action_page.php" target="_blank">
-          <div className='text-input'>
-            <label className='label'>Name:</label>
+        <form onSubmit={handleSubmit} className={styles.form} method='post' action="/action_page.php" target="_blank">
+          <div className={styles.textInput}>
+            <label className={styles.label}>Name:</label>
             <input
-              className='input'
+              className={styles.input}
               type='text'
               name='name'
               value={name}
@@ -115,10 +115,10 @@ PF
               required
             />
           </div>
-          <div className='text-input'>
-            <label className='label'>Email:</label>
+          <div className={styles.textInput}>
+            <label className={styles.label}>Email:</label>
             <input
-              className='input'
+              className={styles.input}
               type='text'
               name='email'
               value={email}
@@ -129,10 +129,10 @@ PF
               required
             />
           </div>
-          <div className='text-input'>
-            <label className='label'>Message:
+          <div className={styles.textInput}>
+            <label className={styles.label}>Message:
               <textarea
-                className='textarea'
+                className={styles.textarea}
                 name='message'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -147,18 +147,18 @@ PF
             </label>
           </div>
           <button
-            className='submit'
+            className={styles.button}
             type="submit"
           >
-            <IoIosSend className='send' size={30} />Submit
+            <IoIosSend className={styles.send} size={30} />Submit
           </button>
         </form>
 
-        <hr className='line' />
+        <hr />
 
-        <div className='google-map'>
+        <div className={styles.googleMap}>
           <GoogleMap
-            mapContainerClassName="map"
+            mapContainerClassName={styles.map}
             mapContainerStyle={containerStyle}
             center={location}
             zoom={zoom}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "../pages/portfolio.css"
+import styles from './portfolio.module.css'
 import data from '../data/portfolio'
 import { Link } from 'react-router-dom'
 
@@ -22,12 +22,12 @@ const Portfolio = () => {
         console.log(projects);
 
         return (
-          <section key={id} className='portfolio'>
-            <h1 className='h1-portfolio'>PORTFOLIO</h1>
-            <div className='underline'></div>
+          <section key={id} className={styles.section}>
+            <h1 className={styles.h1}>PORTFOLIO</h1>
+            <div className={styles.div}></div>
 
-            <div className='img-container'>
-              <img src={image} alt={title} />
+            <div>
+              <img src={image} alt={title} className={styles.img} />
             </div>
             <div className='cocktail-footer'>
               <h3>{title}</h3>
