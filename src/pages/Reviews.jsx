@@ -27,10 +27,10 @@ const Reviews = () => {
 
   return (
     <section className='section'>
-      <h1 className='h1-reviews'>REVIEWS</h1>
-      <div className='underline'></div>
+      <h1 className='h1'>REVIEWS</h1>
+      <div className='div'></div>
 
-      <div className='section-center'>
+      <div className='container'>
         {people.map((person, personIndex) => {
           const { id, image, name, title, quote, date } = person;
 
@@ -47,8 +47,8 @@ const Reviews = () => {
           return (
             <blockquote cite='testimonies' className={position} key={id}>
               {/* h4 should be cite element */}
-              <img src={image} alt={name} className='person-img' />
-              <h4 className='h4-reviews'><b>{name}</b></h4>
+              <img src={image} alt={name} className='img' />
+              <h4 className='h4'><b>{name}</b></h4>
               <p className='title'>{title}</p>
               <p className='text'>{quote}</p>
               <p><small className='date'>{date}</small></p>

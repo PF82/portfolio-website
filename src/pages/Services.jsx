@@ -103,7 +103,7 @@ const Services = () => {
         </div> */}
       </div>
 
-      <h4 className={styles.h4}>SOURCE-CODE EDITOR AND VERSION CONTROL SOFTWARE</h4>
+      <h4 className={styles.h4}>CODE EDITOR & VERSION CONTROL AND COLLABORATION SOFTWARE</h4>
       <div className={styles.editControl}>
         <div className={styles.title_logo}>
           <p className={styles.p}>Visual Studio Code</p>

@@ -20,32 +20,32 @@ const Navbar = () => {
 
         <ul className={styles.ul}>
           <li className={styles.li}>
-            <FaHome className={styles.home} />
-            <Link to="/">Home</Link>
+            <FaHome className={styles.icon} />
+            <Link className={styles.link} to="/">Home</Link>
           </li>
           <li className={styles.li}>
-            <FaUser className={styles.about} />
-            <Link to="/about">About</Link>
+            <FaUser className={styles.icon} />
+            <Link className={styles.link} to="/about">About</Link>
           </li>
           <li className={styles.li}>
-            <FaWindows className={styles.portfolio} />
-            <Link to="/portfolio">Portfolio</Link>
+            <FaWindows className={styles.icon} />
+            <Link className={styles.link} to="/portfolio">Portfolio</Link>
           </li>
           <li className={styles.li}>
-            <MdOutlineMiscellaneousServices className={styles.services} />
-            <Link to="/services">Services</Link>
+            <MdOutlineMiscellaneousServices className={styles.icon} />
+            <Link className={styles.link} to="/services">Services</Link>
           </li>
           {/* <li className={styles.li}>
-          <RiMoneyPoundCircleFill className={styles.pricing} />
-          <Link to="/pricing">Pricing</Link>
+          <RiMoneyPoundCircleFill className={styles.icon} />
+          <Link className={styles.link} to="/pricing">Pricing</Link>
         </li> */}
           <li className={styles.li}>
-            <MdReviews className={styles.reviews} />
-            <Link to="/reviews">Reviews</Link>
+            <MdReviews className={styles.icon} />
+            <Link className={styles.link} to="/reviews">Reviews</Link>
           </li>
           <li className={styles.li}>
-            <FaEnvelope className={styles.contact} />
-            <Link to="/contact">Contact</Link>
+            <FaEnvelope className={styles.icon} />
+            <Link className={styles.link} to="/contact">Contact</Link>
           </li>
         </ul>
 
@@ -65,7 +65,7 @@ const Navbar = () => {
         </i>
 
         <footer>
-          <p className="copy-right">© 2022, Powered by </p>
+          <span className="copy-right">© 2022, Powered by </span>
           <a href="https://www.pedro-fernandes.co.uk/" title="Company Logo" target="_blank">
             <img src={logo} alt="small-logo" className={styles.smallLogo} />
           </a>

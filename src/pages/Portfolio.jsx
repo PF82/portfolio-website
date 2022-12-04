@@ -14,35 +14,34 @@ const Portfolio = () => {
   // console.log(data);
 
   return (
-    <>
-      {projects.map((project) => {
-        const { id, image, title, client, web_technology } = project;
+    <section className={styles.section}>
+      <h1 className={styles.h1}>PORTFOLIO</h1>
+      <div className={styles.div}></div>
 
-        console.log(project);
-        console.log(projects);
+      <div className={styles.container}>
+        {projects.map((project) => {
+          const { id, image, title } = project;
 
-        return (
-          <section key={id} className={styles.section}>
-            <h1 className={styles.h1}>PORTFOLIO</h1>
-            <div className={styles.div}></div>
-
-            <div>
-              <img src={image} alt={title} className={styles.img} />
+          return (
+            <div key={id} className={styles.image_title}>
+              <div>
+                <img src={image} alt={title} className={styles.img} />
+              </div>
+              <div>
+                <h3 className={styles.h3}>{title}</h3>
+                <Link to={`/portfolio/${id}`} className='btn btn-primary btn-details'>
+                  details
+                </Link>
+              </div>
             </div>
-            <div className='cocktail-footer'>
-              <h3>{title}</h3>
-              <h4>{client}</h4>
-              <p>{web_technology}</p>
-              <Link to={`/portfolio/${id}`} className='btn btn-primary btn-details'>
-                details
-              </Link>
-            </div>
-          </section>
-        )
-      })}
-    </>
-  );
-};
+          );
+        })}
+      </div>
+    </section>
+  )
+}
+
+
 
 
 

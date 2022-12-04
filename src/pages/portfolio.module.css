@@ -4,14 +4,14 @@
 .section {
     position: absolute;
     left: 60%;
-    top: 50%;
+    top: 650px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: large;
     color: var(--clr-white);
 }
 
-h1 {
+.h1 {
     text-align: center;
     margin-bottom: 10px;
 }
@@ -24,6 +24,24 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     border-radius: 2.5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 45px;
+    grid-column-gap: 45px;
+    border-radius: 5px;
+text-align: center;
+    height: auto;
+    border: var(--b-off);
+}
+
+.image_title {
+    width: 300px;
+    height: 350px;
+    border: var(--b-on);
 }
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */
