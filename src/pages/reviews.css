@@ -33,7 +33,7 @@
 
 .container {
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 40px;
   width: 80vw;
   /* have to have a height */
   height: 450px;

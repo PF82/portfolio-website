@@ -1,8 +1,8 @@
 const projects = [
     {
         id: 1,
-        image: '/assets/html.jpg',
-        title: 'Weather Application',
+        image: 'images/github.png',
+        title: 'Local Weather Application',
         client: 'FreeCodeCamp',
         web_technology: 'JavaScript',
         date: '26th October 2022',
@@ -16,12 +16,33 @@ const projects = [
             <li>Scroll To Top</li>
         </ul>,
         development_time: '160 Hours',
-        price: 600,
+        price: 'Not applicable',
         download: 'insert link'
     },
     {
         id: 2,
-        image: './assets/css.jpg',
+        image: 'images/visual-studio-code.jpeg',
+        title: 'Weather Application',
+        client: 'PF',
+        web_technology: 'React JS',
+        date: '25th December 2022',
+        highlight_features: <ul>
+            <li>Fast loading speed</li>
+            <li>Support for Bootstrap and SASS</li>
+            <li>Contact form</li>
+            <li>Variety of inner pages like blog page, about page, service page,  portfolio details page, etc.</li>
+            <li>Easy to use and easy to customize</li>
+            <li>Clean and speed optimized code</li>
+            <li>Premium and dedicated support, etc.</li>
+            <li>Free updates</li>
+        </ul>,
+        development_time: '120 Hours',
+        price: 'Not applicable',
+        download: 'insert link'
+    },
+    {
+        id: 3,
+        image: 'images/github.png',
         title: 'Portfolio Website',
         client: 'PF',
         web_technology: 'React JS',
@@ -37,35 +58,14 @@ const projects = [
             <li>Free updates</li>
         </ul>,
         development_time: '120 Hours',
-        price: 800,
-        download: 'insert link'
-    },
-    {
-        id: 3,
-        image: './assets/css.jpg',
-        title: 'To do app',
-        client: 'PF',
-        web_technology: 'React JS',
-        date: '25th December 2022',
-        highlight_features: <ul>
-            <li>Fast loading speed</li>
-            <li>Support for Bootstrap and SASS</li>
-            <li>Contact form</li>
-            <li>Variety of inner pages like blog page, about page, service page,  portfolio details page, etc.</li>
-            <li>Easy to use and easy to customize</li>
-            <li>Clean and speed optimized code</li>
-            <li>Premium and dedicated support, etc.</li>
-            <li>Free updates</li>
-        </ul>,
-        development_time: '120 Hours',
-        price: 800,
+        price: 'Not applicable',
         download: 'insert link'
     },
     {
         id: 4,
-        image: './assets/css.jpg',
-        title: 'Invoice app',
-        client: 'PF',
+        image: 'images/visual-studio-code.jpeg',
+        title: 'React Projects',
+        client: 'FreeCodeCamp',
         web_technology: 'React JS',
         date: '25th December 2022',
         highlight_features: <ul>
@@ -79,49 +79,7 @@ const projects = [
             <li>Free updates</li>
         </ul>,
         development_time: '120 Hours',
-        price: 800,
-        download: 'insert link'
-    },
-    {
-        id: 5,
-        image: './assets/css.jpg',
-        title: 'Ines landing page',
-        client: 'PF',
-        web_technology: 'React JS',
-        date: '25th December 2022',
-        highlight_features: <ul>
-            <li>Fast loading speed</li>
-            <li>Support for Bootstrap and SASS</li>
-            <li>Contact form</li>
-            <li>Variety of inner pages like blog page, about page, service page,  portfolio details page, etc.</li>
-            <li>Easy to use and easy to customize</li>
-            <li>Clean and speed optimized code</li>
-            <li>Premium and dedicated support, etc.</li>
-            <li>Free updates</li>
-        </ul>,
-        development_time: '120 Hours',
-        price: 800,
-        download: 'insert link'
-    },
-    {
-        id: 6,
-        image: './assets/css.jpg',
-        title: 'Carla landing page',
-        client: 'PF',
-        web_technology: 'React JS',
-        date: '25th December 2022',
-        highlight_features: <ul>
-            <li>Fast loading speed</li>
-            <li>Support for Bootstrap and SASS</li>
-            <li>Contact form</li>
-            <li>Variety of inner pages like blog page, about page, service page,  portfolio details page, etc.</li>
-            <li>Easy to use and easy to customize</li>
-            <li>Clean and speed optimized code</li>
-            <li>Premium and dedicated support, etc.</li>
-            <li>Free updates</li>
-        </ul>,
-        development_time: '120 Hours',
-        price: 800,
+        price: 'Not applicable',
         download: 'insert link'
     },
 ];

@@ -1,17 +1,17 @@
 import React from 'react'
 import styles from './services.module.css'
 
-import html from "../assets/html.jpg"
-import css from "../assets/css.jpg"
-import bootstrap from "../assets/bootstrap.jpg"
-import js from "../assets/js.jpg"
-import react from "../assets/react.jpg"
-import node from "../assets/node.jpg"
-import sql from "../assets/sql.jpg"
-import google from "../assets/google-cloud.jpg"
-import netlify from "../assets/netlify.png"
-import vsc from "../assets/visual-studio-code.jpeg"
-import github from "../assets/github.png"
+import html from "../images/html.jpg"
+import css from "../images/css.jpg"
+import bootstrap from "../images/bootstrap.jpg"
+import js from "../images/js.jpg"
+import react from "../images/react.jpg"
+import node from "../images/node.jpg"
+import sql from "../images/sql.jpg"
+import google from "../images/google-cloud.jpg"
+import netlify from "../images/netlify.png"
+import vsc from "../images/visual-studio-code.jpeg"
+import github from "../images/github.png"
 
 
 const Services = () => {

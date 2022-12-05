@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './home.module.css'
-import office from "../assets/office.jpg"
+import office from "../images/office.jpg"
 import Greeting from "../components/Greeting"
 import { FaDownload } from "react-icons/fa";
 

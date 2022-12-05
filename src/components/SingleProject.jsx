@@ -1,17 +1,11 @@
 import React, { useState } from 'react'
-import styles from './portfolio.module.css'
+import styles from './projects.module.css'
 import data from '../data/portfolio'
 import { Link } from 'react-router-dom'
 
-const Portfolio = () => {
+const Projects = () => {
 
   const [projects] = useState(data);
-
-  // const data = [];
-  // for (let i = 0; i < projects.length; i++) {
-  //   data.push(projects[i]);
-  // }
-  // console.log(data);
 
   return (
     <section className={styles.section}>
@@ -23,15 +17,15 @@ const Portfolio = () => {
           const { id, image, title } = project;
 
           return (
-            <div key={id} className={styles.image_title_details}>
+            <div key={id} className={styles.image_title}>
               <div>
-                <img src={image} alt={title} className={styles.image} />
+                <img src={image} alt={title} className={styles.img} />
               </div>
-              <div className={styles.title_details}>
+              <div>
                 <h3 className={styles.h3}>{title}</h3>
-                <Link to={`/portfolio/${id}`} >
-                  <button className={styles.button}>details</button>
-                </Link>
+                {/* <Link to={`/portfolio/${id}`} className='btn btn-primary btn-details'>
+                  details
+                </Link> */}
               </div>
             </div>
           );
@@ -41,4 +35,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Projects

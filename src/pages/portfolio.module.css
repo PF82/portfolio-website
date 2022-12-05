@@ -4,7 +4,7 @@
 .section {
     position: absolute;
     left: 60%;
-    top: 650px;
+    top: 540px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: large;
@@ -33,15 +33,39 @@
     grid-row-gap: 45px;
     grid-column-gap: 45px;
     border-radius: 5px;
-text-align: center;
+    text-align: center;
     height: auto;
+    margin: 40px 0;
     border: var(--b-off);
 }
 
-.image_title {
-    width: 300px;
-    height: 350px;
-    border: var(--b-on);
+.image {
+    width: 350px;
+    height: 280px;
+    object-fit: cover;
+    border: var(--b-off);
+}
+
+.title_details {
+    width: 350px;
+    height: 130px;
+    margin-top: -5px;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    border: var(--b-off);
+}
+
+.button {
+    width: 120px;
+    height: 40px;
+    background-color: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: var(--b-off);
+    text-align: center;
 }
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */
