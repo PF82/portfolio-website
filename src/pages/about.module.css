@@ -33,11 +33,11 @@ h1 {
 }
 
 .a:visited {
-    color: var(--clr-magenta);
+    color: var(--clr-blue);
 }
 
 .a:hover {
-    color: var(--clr-blue);
+    color: var(--clr-magenta);
 }
 
 .a:active {

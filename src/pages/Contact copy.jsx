@@ -23,40 +23,49 @@ const Contact = () => {
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY
   })
 
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  // const [map, setMap] = React.useState(null)
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
+  // const onLoad = React.useCallback(function callback(map) {
+  //   const bounds = new window.google.maps.LatLngBounds(location);
+  //   map.fitBounds(bounds);
+  //   setMap(map)
+  // }, [])
 
-  function handleSubmit(e) {
+  // const onUnmount = React.useCallback(function callback(map) {
+  //   setMap(null)
+  // }, [])
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  // const [inputs, setInputs] = useState({});
+
+  // const handleChange = (event) => {
+  //   const name = event.target.name;
+  //   const email = event.target.email;
+  //   const message = event.target.message;
+  //   const value = event.target.value;
+  //   setInputs(values => ({ ...values, [name]: value, [email]: value, [message]: value }))
+  // }
+
+  const handleSubmit = (e) => {
+    // The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.
     e.preventDefault();
-    fetch("/", {
-      method: "post",
-      action: "/action_page.php",
-      target: "_blank",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert(`
+    alert(`
 Dear ${name}, 
 
-I have just received your message. Thank you for writing to me. 
+I have just received your message. Thank you very much for writing to me. 
 
 I'm working on your request and will get in touch as soon as possible. 
 
-If it is an urgent matter, please call me on +447 951 255 944. I am happy to be of your assistance. 
+Should you have any further queries and/or any urgent issues, please contact me on +447 951 255 944. I am happy to be of your assistance. 
 
 Kind regards, 
 PF
-    `))
-      .catch((error) => alert(error));
+    `)
+    // alert(`Form details submitted: (Name: ${name}, Email: ${email}, Message: ${message})`)
+    // alert(inputs);
   }
 
   const [zoom, setZoom] = useState(10)
@@ -91,23 +100,17 @@ PF
         <hr />
 
         {/* https://www.w3schools.com/react/react_forms.asp */}
-        <form
-          name='contact'
-          onSubmit={handleSubmit}
-          className={styles.form}
-        // method='post'
-        // action="/action_page.php"
-        // target="_blank"
-        >
+        <form onSubmit={handleSubmit} className={styles.form} method='post' action="/action_page.php" target="_blank">
           <div className={styles.textInput}>
             <label className={styles.label}>Name:</label>
             <input
               className={styles.input}
               type='text'
-              id='name'
               name='name'
               value={name}
               onChange={(e) => setName(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1))}
+              // value={inputs.name || ''}
+              // onChange={handleChange}
               placeholder=''
               required
             />
@@ -116,11 +119,12 @@ PF
             <label className={styles.label}>Email:</label>
             <input
               className={styles.input}
-              type='email'
-              id='email'
+              type='text'
               name='email'
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              // value={inputs.email || ''}
+              // onChange={handleChange}
               placeholder=''
               required
             />
@@ -129,11 +133,12 @@ PF
             <label className={styles.label}>Message:
               <textarea
                 className={styles.textarea}
-                id='message'
                 name='message'
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                rows="3"
+                // value={inputs.message || ''}
+                // onChange={handleChange}
+                rows="1"
                 cols="30"
                 placeholder=''
                 required
@@ -157,7 +162,10 @@ PF
             mapContainerStyle={containerStyle}
             center={location}
             zoom={zoom}
+          // onLoad={onLoad}
+          // onUnmount={onUnmount}
           >
+            { /* Child components, such as markers, info windows, etc. */}
             <Marker position={location} />
           </GoogleMap>
         </div>

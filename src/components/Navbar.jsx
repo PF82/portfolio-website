@@ -28,12 +28,12 @@ const Navbar = () => {
             <Link className={styles.link} to="/about">About</Link>
           </li>
           <li className={styles.li}>
-            <FaWindows className={styles.icon} />
-            <Link className={styles.link} to="/portfolio">Portfolio</Link>
-          </li>
-          <li className={styles.li}>
             <MdOutlineMiscellaneousServices className={styles.icon} />
             <Link className={styles.link} to="/services">Services</Link>
+          </li>
+          <li className={styles.li}>
+            <FaWindows className={styles.icon} />
+            <Link className={styles.link} to="/portfolio">Portfolio</Link>
           </li>
           {/* <li className={styles.li}>
           <RiMoneyPoundCircleFill className={styles.icon} />

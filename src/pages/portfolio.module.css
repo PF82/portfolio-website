@@ -4,7 +4,7 @@
 .section {
     position: absolute;
     left: 60%;
-    top: 540px;
+    top: 450px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: large;
@@ -36,37 +36,63 @@
     text-align: center;
     height: auto;
     margin: 40px 0;
-    border: var(--b-off);
 }
 
 .image {
-    width: 350px;
-    height: 280px;
-    object-fit: cover;
-    border: var(--b-off);
+    height: 195px;
+}
+
+.image img {
+    width: 100%;
+    max-height: 100%;
 }
 
 .title_details {
     width: 350px;
     height: 130px;
-    margin-top: -5px;
     background-color: var(--clr-black);
     color: var(--clr-white);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     text-align: center;
-    border: var(--b-off);
+}
+
+.title_details:hover {
+    height: 130px;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    font-weight: bold;
+}
+
+.h3 {
+    padding-top: 20px;
 }
 
 .button {
     width: 120px;
     height: 40px;
-    background-color: none;
-    border-bottom-left-radius: 10px;
+    margin-top: 20px;
+    background-color: var(--clr-black);
+    border-right: 2px solid var(--clr-white);
+    border-bottom: 2px solid var(--clr-white);
     border-bottom-right-radius: 10px;
-    border: var(--b-off);
-    text-align: center;
+    color: var(--clr-white);
+    font-size: var(--fs-16);
+    font-weight: bold;
 }
+
+.button:hover {
+    background-color: var(--clr-white);
+    border-right: 2px solid var(--clr-black);
+    border-bottom: 2px solid var(--clr-black);
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 10px;
+    color: var(--clr-black);
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 /* on screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
