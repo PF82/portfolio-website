@@ -1,0 +1,191 @@
+@import "../pages/colors-fonts-borders";
+@import "../pages/mixins";
+
+// responsive naviagtion sidebar 
+
+nav {
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: $black;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    color: $white;
+    font-size: $fs-20;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: $b-off;
+}
+
+.sectionN {
+    width: 100%;
+    border: $b-off;
+}
+
+.logoN {
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logoN {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.photoN {
+    display: block;
+    margin: 30px auto;
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+.ulN {
+    margin-left: 20px;
+    border: $b-off;
+}
+
+.liN {
+    width: 100%;
+    padding-left: 60px;
+    line-height: 40px;
+    list-style-type: none;
+    border: $b-off;
+}
+
+.iconNH,
+.iconNA,
+.iconNS,
+.iconNP,
+.iconNPR,
+.iconNR,
+.iconNC {
+    display: inline-flex;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    color: $white;
+    border: $b-off;
+}
+
+.iconNH {
+    margin-top: -1.7px;
+}
+
+.iconNA {
+    margin-top: -4px;
+}
+
+.iconNS {
+    margin-top: -3px;
+}
+
+.iconNP {
+    margin-top: -2px;
+}
+
+.iconNPR {
+    margin-top: -3px;
+}
+
+.iconNR {
+    margin-top: -1px;
+}
+
+.iconNC {
+    margin-top: -3px;
+}
+
+.linkN {
+    margin-left: 10px;
+    text-decoration: none;
+    color: $white;
+    border: $b-off;
+}
+
+.liN:hover {
+    background-color: $white;
+    color: $black;
+
+    .iconNH,
+    .iconNA,
+    .iconNS,
+    .iconNP,
+    .iconNPR,
+    .iconNR,
+    .iconNC {
+        color: $black;
+    }
+
+    .linkN {
+        color: $black;
+    }
+}
+
+// .iconN:hover,
+// .linkN:hover {
+//     color: $black;
+// }
+
+.iN {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linkedinN {
+    color: #0e76a8;
+}
+
+// .facebookN {
+//     color: #3b5998;
+// }
+
+.githubN {
+    color: $white;
+}
+
+.whatsappN {
+    color: #25d366;
+}
+
+.linkedinN,
+// .facebookN, 
+.whatsappN,
+.githubN {
+    width: 35px;
+    height: 35px;
+    margin: 30px 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.smallLogoN {
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}

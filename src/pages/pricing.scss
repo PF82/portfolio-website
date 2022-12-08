@@ -1,0 +1,72 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// pricing 
+
+// the value of the margin-left property should match the value of the sidebar's width property 
+.sectionPr {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: medium;
+}
+
+.h1Pr {
+    color: $white;
+    font-size: $fs-26;
+    text-align: center;
+}
+
+.divPr{
+    height: 5px;
+    width: 80px;
+    margin-top: 10px;
+    background: $primary-5;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5px;
+}
+
+.tablePr {
+    display: grid;
+    grid: repeat(3, 150px) / repeat(3, 1fr);
+    grid-gap: 150px 50px;
+    font-size: medium;
+    height: 565px;
+    margin-top: 10px;
+}
+
+.tableBodyPr .tableRowHeadingPr {
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: $black;
+    color: $white;
+}
+
+.tableRowHeadingPr {
+    font-weight: bold;
+}
+
+.tableRowPr {
+    border-collapse: collapse;
+    background: $white;
+    height: 60px;
+    width: 200px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+// on screens that are less than 700px wide, make the sidebar into a topbar 
+@media screen and (max-width: 700px) {
+    .sectionPr {
+        margin-left: 0;
+    }
+}

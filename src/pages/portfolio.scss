@@ -1,0 +1,100 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// portfolio 
+
+// the value of the margin-left property should match the value of the sidebar's width property 
+.sectionP {
+    position: absolute;
+    left: 60%;
+    top: 450px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: large;
+    color: $white;
+}
+
+.h1P {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.divP {
+    height: 5px;
+    width: 80px;
+    margin-top: 10px;
+    background: $primary-5;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5px;
+}
+
+.containerP {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 45px;
+    grid-column-gap: 45px;
+    border-radius: 5px;
+    text-align: center;
+    height: auto;
+    margin: 40px 0;
+}
+
+.imageP {
+    height: 195px;
+}
+
+.imageP img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.title_detailsP {
+    width: 350px;
+    height: 130px;
+    background-color: $black;
+    color: $white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+.title_detailsP:hover {
+    background-color: $white;
+    color: $black;
+
+    .buttonP {
+        background-color: $white;
+        border-top: none;
+        border-left: none;
+        border-right: 2px solid $black;
+        border-bottom: 2px solid $black;
+        color: $black;
+        cursor: pointer;
+    }
+}
+
+.h3P {
+    padding-top: 20px;
+}
+
+.buttonP {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: $black;
+    border-right: 2px solid $white;
+    border-bottom: 2px solid $white;
+    border-bottom-right-radius: 10px;
+    color: $white;
+    font-size: $fs-16;
+    font-weight: bold;
+}
+
+// on screens that are less than 700px wide, make the sidebar into a topbar 
+@media screen and (max-width: 700px) {
+    .sectionP {
+        margin-left: 0;
+    }
+}

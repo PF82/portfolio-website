@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './home.module.css'
+import './home.scss'
 import office from "../images/office.jpg"
 import Greeting from "../components/Greeting"
 import { FaDownload } from "react-icons/fa";
@@ -23,17 +23,17 @@ const Home = () => {
   }
 
   return (
-    <section className={styles.section}>
-      <figure className={styles.figure}>
-        <img src={office} className={styles.img} alt="Background image" />
-        <figcaption className={styles.figcaption}>
-          <h5 className={styles.h5}><Greeting /> I'm</h5>
-          <h2 className={styles.h2}>Pedro Fernandes.</h2>
-          <h3 className={styles.h3}>Junior Front-End Developer</h3>
-          <h4 className={styles.h4}>based in London.</h4>
+    <section className='sectionH'>
+      <figure className='figureH'>
+        <img src={office} className='imgH' alt="Background image" />
+        <figcaption className='figcaptionH'>
+          <h5 className='h5H'><Greeting /> I'm</h5>
+          <h2 className='h2H'>Pedro Fernandes.</h2>
+          <h3 className='h3H'>Junior Front-End Developer</h3>
+          <h4 className='h4H'>based in London.</h4>
         </figcaption>
-        <button className={styles.button} onClick={onButtonClick}>
-          <i><FaDownload className={styles.i} /></i>Download Resume
+        <button className='buttonH' onClick={onButtonClick}>
+          <i><FaDownload className='iH' /></i>Download Resume
         </button>
       </figure>
     </section>

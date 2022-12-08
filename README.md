@@ -6,3 +6,8 @@
 4. form server-side to be sorted
 5. details button to open project details; import data items from portfolio.js to project.js
 
+# To do:
+
+1. add loading to contact page and/or the whole website 
+2. navbar items hover not working properly
+

@@ -1,17 +1,17 @@
 import React from 'react'
-import styles from './about.module.css'
+import './about.scss'
 
 const About = () => {
   return (
-    <section className={styles.section}>
-      <h1 className={styles.h1}>ABOUT ME</h1>
-      <div className={styles.div}></div>
+    <section className='sectionA'>
+      <h2 className='h1A'>ABOUT ME</h2>
+      <div className='divA'></div>
       <br />
       <p>A results-driven and self-motivated Junior Front-End Developer with a passion for creating visually
         aesthetic, responsive and accessible websites and web applications.</p>
       <br />
       <p>Basic knowledge in a wide variety of web technologies / software packages (please refer to 'Services'
-        section for more). And a satisfactory understanding of the principles and techniques of building websites
+        page for more). And a satisfactory understanding of the principles and techniques of building websites
         and applications from inception through completion. Ability to adapt in both{' '}
         <a
           href="https://www.indeed.com/career-advice/career-development/what-is-a-self-starter"
@@ -19,22 +19,22 @@ const About = () => {
           style={{ color: 'white', cursor: 'unset' }}
         >self-starting</a> and{' '} collaborative environments while staying focused on achieving the required
         standards and quality under strict deadlines.
-        </p>
+      </p>
       <br />
       <p>Worked through 1300+ hours of coding lessons, exercises and projects on an interactive learning web platform{' '}
         <a
-          className={styles.a}
+          className='aA'
           href="https://www.freecodecamp.org/"
           target="_blank"
-        ><b>(freeCodeCamp)</b></a>{' '} with the assistance of a friend that is a Full Stack Developer. The course 
-        comprised four modules: Responsive Web Design, JavaScript Algorithms and Data Structures, Front End Development 
+        ><b>(freeCodeCamp)</b></a>{' '} with the assistance of a friend that is a Full Stack Developer. The course
+        comprised four modules: Responsive Web Design, JavaScript Algorithms and Data Structures, Front End Development
         Libraries and Data Visualization.
       </p>
       <br />
       <p>You can find more about my education and work experience by clicking on the button
-        in the 'Home' section to download my resume or on{' '}
+        in the 'Home' page to download my resume or on{' '}
         <a
-          className={styles.a}
+          className='aA'
           href="https://www.linkedin.com/"
           target="_blank"><b>LinkedIn</b>
         </a>.

@@ -1,0 +1,87 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// home 
+
+// the value of the margin-left property should match the value of the sidebar's width property 
+.sectionH {
+    margin-left: 20%;
+    padding: 50px;
+    min-height: 100vh;
+    position: relative;
+    // font-size: large; 
+}
+
+.figureH {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.imgH {
+    width: 54vw;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.figcaptionH {
+    position: absolute;
+    top: 75%;
+    left: 69%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: $black;
+}
+
+.h5H {
+    padding-left: 40px;
+}
+
+.h2H {
+    padding-left: 20px;
+}
+
+.h3H {
+    color: $primary-4;
+}
+
+.h4H {
+    padding-left: 30px;
+}
+
+.buttonH {
+    position: absolute;
+    top: 90%;
+    left: 52%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 195px;
+    // font-weight: bold; 
+    cursor: pointer;
+    font-size: $fs-16;
+    background-color: $black;
+    color: $white;
+    border-radius: 20px;
+}
+
+.buttonH:hover {
+    background-color: $white;
+    color: $black;
+}
+
+.iH {
+    margin-right: 5px;
+}
+
+// on screens that are less than 700px wide, make the sidebar into a topbar 
+@media screen and (max-width: 700px) {
+    .sectionH {
+        margin-left: 0;
+    }
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from './contact.module.css'
+import './contact.scss'
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { FaEnvelope } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
@@ -68,22 +68,22 @@ PF
   }, [])
 
   return isLoaded ? (
-    <section className={styles.section}>
-      <h1 className={styles.h1}>CONTACT ME</h1>
-      <div className={styles.div}></div>
+    <section className='sectionC'>
+      <h1 className='h1C'>CONTACT ME</h1>
+      <div className='divC'></div>
 
-      <div className={styles.container}>
-        <div className={styles.flexbox}>
-          <div className={styles.box + ' ' + styles.box1}>
-            <FaEnvelope className={styles.email} size={30} />
+      <div className='containerC'>
+        <div className='flexboxC'>
+          <div className='boxC box1C'>
+            <FaEnvelope className='emailC' size={30} />
             <p>pf@gmail.com</p>
           </div>
-          <div className={styles.box + ' ' + styles.box2}>
-            <MdLocationPin className={styles.location} size={30} />
+          <div className='boxC box2C'>
+            <MdLocationPin className='locationC' size={30} />
             <p>London, UK</p>
           </div>
-          <div className={styles.box + ' ' + styles.box3}>
-            <ImMobile className={styles.phoneNr} size={30} />
+          <div className='boxC box3C'>
+            <ImMobile className='phoneNrC' size={30} />
             <p>+447 951 255 944</p>
           </div>
         </div>
@@ -94,15 +94,15 @@ PF
         <form
           name='contact'
           onSubmit={handleSubmit}
-          className={styles.form}
+          className='formC'
         // method='post'
         // action="/action_page.php"
         // target="_blank"
         >
-          <div className={styles.textInput}>
-            <label className={styles.label}>Name:</label>
+          <div className='textInputC'>
+            <label className='labelC'>Name:</label>
             <input
-              className={styles.input}
+              className='inputC'
               type='text'
               id='name'
               name='name'
@@ -112,10 +112,10 @@ PF
               required
             />
           </div>
-          <div className={styles.textInput}>
-            <label className={styles.label}>Email:</label>
+          <div className='textInputC'>
+            <label className='labelC'>Email:</label>
             <input
-              className={styles.input}
+              className='inputC'
               type='email'
               id='email'
               name='email'
@@ -125,10 +125,10 @@ PF
               required
             />
           </div>
-          <div className={styles.textInput}>
-            <label className={styles.label}>Message:
+          <div className='textInputC'>
+            <label className='labelC'>Message:
               <textarea
-                className={styles.textarea}
+                className='textareaC'
                 id='message'
                 name='message'
                 value={message}
@@ -142,18 +142,18 @@ PF
             </label>
           </div>
           <button
-            className={styles.button}
+            className='buttonC'
             type="submit"
           >
-            <IoIosSend className={styles.send} size={30} />Submit
+            <IoIosSend className='sendC' size={30} />Submit
           </button>
         </form>
 
         <hr />
 
-        <div className={styles.googleMap}>
+        <div className='googleMapC'>
           <GoogleMap
-            mapContainerClassName={styles.map}
+            mapContainerClassName='mapC'
             mapContainerStyle={containerStyle}
             center={location}
             zoom={zoom}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
 import data from '../data/reviews';
-import "../pages/reviews.css"
+import './reviews.scss'
 
 const Reviews = () => {
   const [people, setPeople] = useState(data);
@@ -26,11 +26,11 @@ const Reviews = () => {
   }, [index]);
 
   return (
-    <section className='section'>
-      <h1 className='h1'>REVIEWS</h1>
-      <div className='div'></div>
+    <section className='sectionR'>
+      <h1 className='h1R'>REVIEWS</h1>
+      <div className='divR'></div>
 
-      <div className='container'>
+      <div className='containerR'>
         {people.map((person, personIndex) => {
           const { id, image, name, title, quote, date } = person;
 
@@ -47,19 +47,19 @@ const Reviews = () => {
           return (
             <blockquote cite='testimonies' className={position} key={id}>
               {/* h4 should be cite element */}
-              <img src={image} alt={name} className='img' />
-              <h4 className='h4'><b>{name}</b></h4>
-              <p className='title'>{title}</p>
-              <p className='text'>{quote}</p>
-              <p><small className='date'>{date}</small></p>
-              <FaQuoteRight className='icon' />
+              <img src={image} alt={name} className='imgR' />
+              <h4 className='h4R'><b>{name}</b></h4>
+              <p className='titleR'>{title}</p>
+              <p className='textR'>{quote}</p>
+              <p><small className='dateR'>{date}</small></p>
+              <FaQuoteRight className='iconR' />
             </blockquote>
           );
         })}
-        <button className='prev' onClick={() => setIndex(index - 1)}>
+        <button className='prevR' onClick={() => setIndex(index - 1)}>
           <FiChevronLeft />
         </button>
-        <button className='next' onClick={() => setIndex(index + 1)}>
+        <button className='nextR' onClick={() => setIndex(index + 1)}>
           <FiChevronRight />
         </button>
       </div>

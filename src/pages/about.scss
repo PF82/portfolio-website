@@ -1,0 +1,55 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// about 
+
+// the value of the margin-left property should match the value of the sidebar's width property 
+.sectionA {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  font-size: large;
+  text-align: justify;
+  text-justify: inter-word;
+  color: $white;
+}
+
+.h1A {
+  text-align: center;
+}
+
+.divA {
+  height: 5px;
+  width: 80px;
+  margin: 10px 0;
+  background: $primary-5;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2.5px;
+}
+
+.aA:link {
+  text-decoration: none;
+}
+
+.aA:visited {
+  color: $blue;
+}
+
+.aA:hover {
+  color: $magenta;
+}
+
+.aA:active {
+  color: $green;
+}
+
+// on screens that are less than 700px wide, make the sidebar into a topbar 
+@media screen and (max-width: 700px) {
+  .sectionA {
+      margin-left: 0;
+  }
+}

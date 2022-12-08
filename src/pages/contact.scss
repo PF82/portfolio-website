@@ -1,0 +1,121 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// contact 
+
+// the value of the margin-left property should match the value of the sidebar's width property 
+.sectionC {
+    font-size: large;
+    margin-left: 20%;
+    min-height: 100vh;
+    position: relative;
+    font-size: large;
+    color: $white;
+}
+
+.h1C {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.divC {
+    height: 5px;
+    width: 80px;
+    margin-top: 10px;
+    background: $primary-5;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5px;
+}
+
+.containerC {
+    margin: 40px 80px;
+}
+
+.flexboxC {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.boxC {
+    width: 33.33%;
+    color: $white;
+    background-color: $black;
+    text-align: center;
+    line-height: 40px;
+}
+
+.box2C,
+.box3C {
+    margin-bottom: -10px 0;
+    border-left: 2px solid $white;
+}
+
+.emailC,
+.locationC,
+.phoneNrC {
+    margin-bottom: -20px;
+}
+
+.box1C p,
+.box2C p,
+.box3C p {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.formC,
+.labelC,
+.inputC,
+.textareaC {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    font-size: $fs-18;
+}
+
+.textInputC {
+    margin-top: 10px;
+}
+
+.inputC,
+.textareaC {
+    font-size: $fs-18;
+    padding-left: 10px;
+}
+
+.buttonC {
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+    line-height: 10px;
+    font-size: $fs-18;
+    color: $white;
+    background-color: $black;
+}
+
+.sendC {
+    margin-top: 2px;
+    padding-bottom: 5px;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.googleMapC {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+}
+
+.googleMapC .mapC {
+    width: 100%;
+}
+
+// on screens that are less than 700px wide, make the sidebar into a topbar 
+@media screen and (max-width: 700px) {
+    .sectionC {
+        margin-left: 0;
+    }
+}

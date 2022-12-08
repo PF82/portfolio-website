@@ -28,7 +28,7 @@ const Services = () => {
       </ul>
 
       <h3 className={styles.h3}>TECHNICAL SKILLS</h3>
-      <ul className={styles.ul}>
+      <ol className={styles.ul}>
         <li>Assessing{' '}
           <a
             href="https://www.interaction-design.org/literature/topics/ux-design"
@@ -42,7 +42,7 @@ const Services = () => {
           >UI</a> designs for technical feasibility</li>
         <li>Creating websites, web and mobile applications, and landing pages from concept through deployment</li>
         <li>Maintaining, optimizing, troubleshooting, and improving websites and applications</li>
-      </ul>
+      </ol>
 
       <h4 className={styles.h4}>BROWSER SOFTWARE</h4>
       <div className={styles.browser1}>

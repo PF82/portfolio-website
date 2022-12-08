@@ -1,0 +1,151 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// reviews 
+.sectionR {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: large;
+    color: $white;
+    max-width: $max-width;
+}
+
+.h1R {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+// .title .h1 {
+//     display: flex;
+//     align-items: left;
+//     justify-content: left;
+// }
+
+.divR {
+    height: 5px;
+    width: 80px;
+    margin-top: 10px;
+    background: $primary-5;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5px;
+}
+
+.containerR {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 80vw;
+    // have to have a height 
+    height: 450px;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+.imgR {
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid $black;
+    box-shadow: $dark-shadow;
+}
+
+blockquote .h4R {
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 0.25rem;
+}
+
+.titleR {
+    text-transform: capitalize;
+    margin-bottom: 0.75rem;
+    color: $primary-4;
+    font-weight: bold;
+}
+
+.textR {
+    // max-width: 35em; 
+    width: 690px;
+    margin: 30px auto;
+    line-height: 1.5;
+}
+
+.iconR {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: $black;
+}
+
+.prevR,
+.nextR {
+    position: absolute;
+    top: 200px;
+    transform: translateY(-50%);
+    background: $black;
+    color: $white;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: grid;
+    place-items: center;
+    border-color: transparent;
+    font-size: 1rem;
+    border-radius: $radius;
+    cursor: pointer;
+    transition: $transition;
+}
+
+.prevR:hover,
+.nextR:hover {
+    background: $primary-5;
+}
+
+.prevR {
+    left: 0;
+}
+
+.nextR {
+    right: 0;
+}
+
+@media (min-width: 800px) {
+    .textR {
+        max-width: 45em;
+    }
+
+    .prevR,
+    .nextR {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+blockquote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: $transition;
+}
+
+blockquote.activeSlide {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+blockquote.lastSlide {
+    transform: translateX(-100%);
+}
+
+blockquote.nextSlide {
+    transform: translateX(100%);
+}

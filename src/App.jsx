@@ -10,9 +10,6 @@ import Services from "./pages/Services";
 import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
-import Project from './pages/Project';
-
-// import SingleProject from './components/SingleProject';
 
 export default function App() {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import styles from './portfolio.module.css'
+import './portfolio.scss'
 import data from '../data/portfolio'
 
 const Portfolio = () => {
@@ -7,23 +7,23 @@ const Portfolio = () => {
   const [projects] = useState(data);
 
   return (
-    <section className={styles.section}>
-      <h1 className={styles.h1}>PORTFOLIO</h1>
-      <div className={styles.div}></div>
+    <section className='sectionP'>
+      <h1 className='h1P'>PORTFOLIO</h1>
+      <div className='divP'></div>
 
-      <div className={styles.container}>
+      <div className='containerP'>
         {projects.map((project) => {
           const { id, image, title } = project;
 
           return (
-            <div key={id} className={styles.image_title_details}>
-              <div className={styles.image}>
+            <div key={id} className='image_title_detailsP'>
+              <div className='imageP'>
                 <img src={image} alt={title} />
               </div>
-              <div className={styles.title_details}>
-                <h3 className={styles.h3}>{title}</h3>
+              <div className='title_detailsP'>
+                <h3 className='h3P'>{title}</h3>
                 {/* <Link to={`/singleproject/${id}`} > */}
-                <button className={styles.button} >Details</button>
+                <button className='buttonP' >Details</button>
                 {/* </Link> */}
               </div>
             </div>
