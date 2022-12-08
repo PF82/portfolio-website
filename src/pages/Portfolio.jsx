@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './portfolio.scss'
 import data from '../data/portfolio'
 
@@ -22,9 +23,9 @@ const Portfolio = () => {
               </div>
               <div className='title_detailsP'>
                 <h3 className='h3P'>{title}</h3>
-                {/* <Link to={`/singleproject/${id}`} > */}
+                <Link to={`/projectDetails/${id}`} >
                 <button className='buttonP' >Details</button>
-                {/* </Link> */}
+                </Link>
               </div>
             </div>
           );
@@ -35,3 +36,4 @@ const Portfolio = () => {
 }
 
 export default Portfolio
+

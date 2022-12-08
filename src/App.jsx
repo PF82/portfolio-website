@@ -14,19 +14,19 @@ import NoPage from "./pages/NoPage";
 export default function App() {
   return (
     // https://www.w3schools.com/react/react_router.asp
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Layout />} >
-            <Route index element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="services" element={<Services />} />
-            <Route path="portfolio" element={<Portfolio />} />
-            {/* <Route path="pricing" element={<Pricing />} /> */}
-            <Route path="reviews" element={<Reviews />} />
-            <Route path="contact" element={<Contact />} />
-            <Route path="*" element={<NoPage />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} >
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="services" element={<Services />} />
+          <Route path="portfolio" element={<Portfolio />} />
+          {/* <Route path="pricing" element={<Pricing />} /> */}
+          <Route path="reviews" element={<Reviews />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }

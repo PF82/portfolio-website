@@ -1,18 +1,19 @@
 import React, { useState } from 'react'
-// import styles from './project.module.css'
 import data from '../data/portfolio'
 
-const Project = () => {
+const ProjectDetails = () => {
 
   const [projects] = useState(data);
 
+console.log(projects);
+
   return (
     <section>
-
+      hello
       <div>
         {projects.map((project) => {
           const { id, project_images, title, client, web_technology, date } = project;
-
+console.log(client);
           return (
             <div key={id} >
               <div >
@@ -35,4 +36,4 @@ const Project = () => {
   )
 }
 
-export default Project
+export default ProjectDetails
