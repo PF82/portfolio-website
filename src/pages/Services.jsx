@@ -1,18 +1,17 @@
 import React from 'react'
 import './services.scss'
 
-import html from "../images/html.jpg"
-import css from "../images/css.jpg"
-import bootstrap from "../images/bootstrap.jpg"
-import js from "../images/js.jpg"
-import react from "../images/react.jpg"
-import node from "../images/node.jpg"
-import sql from "../images/sql.jpg"
-import google from "../images/google-cloud.jpg"
-import netlify from "../images/netlify.png"
-import vsc from "../images/visual-studio-code.jpeg"
-import github from "../images/github.png"
-
+import html from "../images/services/html.jpg"
+import css from "../images/services/css.jpg"
+import bootstrap from "../images/services/bootstrap.jpg"
+import js from "../images/services/js.jpg"
+import react from "../images/services/react.jpg"
+import node from "../images/services/node.jpg"
+import sql from "../images/services/sql.jpg"
+import google from "../images/services/google-cloud.jpg"
+import netlify from "../images/services/netlify.png"
+import vsc from "../images/services/visual-studio-code.jpeg"
+import github from "../images/services/github.png"
 
 const Services = () => {
   return (
@@ -104,6 +103,7 @@ const Services = () => {
       </div>
 
       <h4 className='h4S'>CODE EDITOR & VERSION CONTROL AND COLLABORATION SOFTWARE</h4>
+      <h6 className='h6S'>(INCLUDING MICROSOFT VISUAL STUDIO LIVE SHARE)</h6>
       <div className='editControlS'>
         <div className='title_logoS'>
           <p className='pS'>Visual Studio Code</p>

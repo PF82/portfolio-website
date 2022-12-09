@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.scss'
-import office from "../images/office.jpg"
+import office from "../images/home/office.jpg"
 import Greeting from "../components/Greeting"
 import { FaDownload } from "react-icons/fa";
 
@@ -29,7 +29,7 @@ const Home = () => {
         <figcaption className='figcaptionH'>
           <h5 className='h5H'><Greeting /> I'm</h5>
           <h2 className='h2H'>Pedro Fernandes.</h2>
-          <h3 className='h3H'>Junior Front-End Developer</h3>
+          <h3 className='h3H'>Junior Front End Developer</h3>
           <h4 className='h4H'>based in London.</h4>
         </figcaption>
         <button className='buttonH' onClick={onButtonClick}>

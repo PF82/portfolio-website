@@ -10,6 +10,8 @@ import Services from "./pages/Services";
 import Reviews from "./pages/Reviews";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
+import Project from './pages/Project';
+import { startTransition } from 'react';
 
 export default function App() {
   return (
@@ -24,9 +26,11 @@ export default function App() {
           {/* <Route path="pricing" element={<Pricing />} /> */}
           <Route path="reviews" element={<Reviews />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="project/:projectId" element={<Project />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
   );
 }
+

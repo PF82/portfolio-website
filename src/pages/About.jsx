@@ -7,8 +7,8 @@ const About = () => {
       <h2 className='h1A'>ABOUT ME</h2>
       <div className='divA'></div>
       <br />
-      <p>A results-driven and self-motivated Junior Front-End Developer with a passion for creating visually
-        aesthetic, responsive and accessible websites and web applications.</p>
+      <p>A resourceful, self-motivated and results-driven Junior Front End Developer with a passion for creating 
+        visually aesthetic, responsive and accessible websites and web applications.</p>
       <br />
       <p>Basic knowledge in a wide variety of web technologies / software packages (please refer to 'Services'
         page for more). And a satisfactory understanding of the principles and techniques of building websites
@@ -26,9 +26,9 @@ const About = () => {
           className='aA'
           href="https://www.freecodecamp.org/"
           target="_blank"
-        ><b>(freeCodeCamp)</b></a>{' '} with the assistance of a friend that is a Full Stack Developer. The course
-        comprised four modules: Responsive Web Design, JavaScript Algorithms and Data Structures, Front End Development
-        Libraries and Data Visualization.
+        ><b>(freeCodeCamp)</b></a>{' '} with the assistance of a friend (using Microsoft Visual Studio Live Share) 
+        that is a Full Stack Web Developer. The course comprised four modules: Responsive Web Design, JavaScript 
+        Algorithms and Data Structures, Front End Development Libraries and Data Visualization.
       </p>
       <br />
       <p>You can find more about my education and work experience by clicking on the button

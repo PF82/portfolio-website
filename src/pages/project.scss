@@ -1,0 +1,87 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// project  
+
+// the value of the margin-left property should match the value of the sidebar's width property 
+.sectionPro {
+    position: absolute;
+    left: 60%;
+    top: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+    color: $white;
+    border: $b-on;
+}
+
+.imagesPro {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-row-gap: 45px;
+    grid-column-gap: 45px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 210px;
+    border: $b-on;
+}
+
+.imgPro {
+    border: $b-on;
+}
+
+.dataPro {
+    position: absolute;
+    left: 50%;
+    top: 600px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.dataPro span {
+    color: $black;
+    font-weight: bold;
+}
+
+.pPro {
+    list-style-position: inside;
+}
+
+.buttonPro {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: 2px solid $white;
+    border-bottom: 2px solid $white;
+    border-bottom-right-radius: 10px;
+    color: $white;
+    font-size: $fs-16;
+    font-weight: bold;
+}
+
+.buttonPro:hover {
+    cursor: pointer;
+    border-right: 2px solid $black;
+    border-bottom: 2px solid $black;
+    border-bottom-right-radius: 10px;
+    color: $black;
+}
+
+// on screens that are less than 700px wide, make the sidebar into a topbar 
+@media screen and (max-width: 700px) {
+    .sectionP {
+        margin-left: 0;
+    }
+}
