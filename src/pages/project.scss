@@ -7,7 +7,7 @@
 .sectionPro {
     position: absolute;
     left: 60%;
-    top: 200px;
+    top: 500px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 70vw;
@@ -22,24 +22,26 @@
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px 200px;
-    grid-row-gap: 45px;
-    grid-column-gap: 45px;
+    grid-row-gap: 70px;
+    grid-column-gap: 170px;
     margin-top: 30px;
     margin-bottom: 50px;
     align-items: center;
-    justify-content: center;
-    height: 210px;
-    border: $b-on;
+    // justify-content: center;
+    // height: 210px;
+    border: $b-off;
 }
 
 .imgPro {
     border: $b-on;
+    width: 350px;
+    height: 250px;
 }
 
 .dataPro {
     position: absolute;
     left: 50%;
-    top: 600px;
+    top: 800px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 100%;

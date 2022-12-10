@@ -10,7 +10,7 @@ const About = () => {
       <p>A resourceful, self-motivated and results-driven Junior Front End Developer with a passion for creating 
         visually aesthetic, responsive and accessible websites and web applications.</p>
       <br />
-      <p>Basic knowledge in a wide variety of web technologies / software packages (please refer to 'Services'
+      <p>Basic knowledge in a wide variety of coding languages / software packages (please refer to 'Services'
         page for more). And a satisfactory understanding of the principles and techniques of building websites
         and applications from inception through completion. Ability to adapt in both{' '}
         <a
@@ -21,14 +21,15 @@ const About = () => {
         standards and quality under strict deadlines.
       </p>
       <br />
-      <p>Worked through 1300+ hours of coding lessons, exercises and projects on an interactive learning web platform{' '}
+      <p>Worked through 1300+ hours of coding lessons, exercises and projects on an interactive learning web platform{' '}(
         <a
           className='aA'
           href="https://www.freecodecamp.org/"
           target="_blank"
-        ><b>(freeCodeCamp)</b></a>{' '} with the assistance of a friend (using Microsoft Visual Studio Live Share) 
-        that is a Full Stack Web Developer. The course comprised four modules: Responsive Web Design, JavaScript 
-        Algorithms and Data Structures, Front End Development Libraries and Data Visualization.
+        ><b>freeCodeCamp</b></a>){' '} with the assistance of a friend (using Microsoft Visual Studio Live Share) 
+        that is a Full Stack Web Developer, along reading articles and books about front end development. The course comprised 
+        four modules: Responsive Web Design, JavaScript Algorithms and Data Structures, Front End Development Libraries and 
+        Data Visualization.
       </p>
       <br />
       <p>You can find more about my education and work experience by clicking on the button

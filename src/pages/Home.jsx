@@ -27,9 +27,10 @@ const Home = () => {
       <figure className='figureH'>
         <img src={office} className='imgH' alt="Background image" />
         <figcaption className='figcaptionH'>
-          <h5 className='h5H'><Greeting /> I'm</h5>
-          <h2 className='h2H'>Pedro Fernandes.</h2>
-          <h3 className='h3H'>Junior Front End Developer</h3>
+          <h5 className='h5H'><Greeting /></h5>
+          <h3 className='h3H'>Welcome to my website!</h3>
+          <h2 className='h2H'>I'm Pedro Fernandes.</h2>
+          <h1 className='h1H'>Front End Developer</h1>
           <h4 className='h4H'>based in London.</h4>
         </figcaption>
         <button className='buttonH' onClick={onButtonClick}>

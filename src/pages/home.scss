@@ -30,8 +30,8 @@
 
 .figcaptionH {
     position: absolute;
-    top: 75%;
-    left: 69%;
+    top: 70%;
+    left: 72%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-weight: bold;
@@ -39,19 +39,21 @@
 }
 
 .h5H {
-    padding-left: 40px;
-}
-
-.h2H {
-    padding-left: 20px;
+    padding-left: 70px;
 }
 
 .h3H {
+    padding-left: 30px;
+}
+
+.h1H {
+    padding-left: 20px;
     color: $primary-4;
 }
 
+
 .h4H {
-    padding-left: 30px;
+    padding-left: 50px;
 }
 
 .buttonH {
@@ -62,7 +64,7 @@
     transform: translate(-50%, -50%);
     height: 40px;
     width: 195px;
-    // font-weight: bold; 
+    font-weight: bold; 
     cursor: pointer;
     font-size: $fs-16;
     background-color: $black;
@@ -73,6 +75,7 @@
 .buttonH:hover {
     background-color: $white;
     color: $black;
+    font-weight: bold;
 }
 
 .iH {

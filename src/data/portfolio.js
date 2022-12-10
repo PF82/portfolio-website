@@ -3,8 +3,11 @@
 const projects = [
     {
         id: 1,
-        image: '/src/images/portfolio/local-weather-app.jpg',
+        image: '/images/local-weather-app.jpg',
         project_images: [
+            '/images/local-weather-app/local-weather-app.jpg',
+            '/images/local-weather-app/local-weather-app.jpg',
+            '/images/local-weather-app/local-weather-app.jpg',
             '/images/local-weather-app/local-weather-app.jpg',
             '/images/local-weather-app/local-weather-app.jpg',
             '/images/local-weather-app/local-weather-app.jpg'
@@ -33,6 +36,9 @@ const projects = [
         project_images: [
             '/images/local-weather-app/local-weather-app.jpg',
             '/images/local-weather-app/local-weather-app.jpg',
+            '/images/local-weather-app/local-weather-app.jpg',
+            '/images/local-weather-app/local-weather-app.jpg',
+            '/images/local-weather-app/local-weather-app.jpg',
             '/images/local-weather-app/local-weather-app.jpg'
         ],
         title: 'Weather Application',
@@ -57,6 +63,9 @@ const projects = [
         id: 3,
         image: '/images/personal-portfolio/personal-portfolio.jpg',
         project_images: [
+            '/images/local-weather-app/local-weather-app.jpg',
+            '/images/local-weather-app/local-weather-app.jpg',
+            '/images/local-weather-app/local-weather-app.jpg',
             '/images/local-weather-app/local-weather-app.jpg',
             '/images/local-weather-app/local-weather-app.jpg',
             '/images/local-weather-app/local-weather-app.jpg'

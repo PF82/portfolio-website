@@ -94,6 +94,15 @@
     font-size: $fs-18;
     color: $white;
     background-color: $black;
+    cursor: progress;
+}
+
+.buttonC:hover {
+    color: $black;
+    background-color: $white;
+    cursor: pointer;
+    font-weight: bold;
+    border: $b-off;
 }
 
 .sendC {

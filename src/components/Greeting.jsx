@@ -13,7 +13,7 @@ const Greeting = () => {
         greet = "evening";
     }
 
-    return <span>Good {greet}!</span>
+    return <span>Good {greet}.</span>
 }
 
 export default Greeting
