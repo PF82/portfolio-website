@@ -1,11 +1,11 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../sass/contact.scss'
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { FaEnvelope } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import { ImMobile } from "react-icons/im";
 import { IoIosSend } from "react-icons/io";
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 
 const containerStyle = {
   width: '100%',
@@ -36,29 +36,29 @@ const Contact = () => {
       .join("&");
   }
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    fetch("/", {
-      method: "post",
-      action: "/action_page.php",
-      target: "_blank",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
-    })
-      .then(() => alert(`
-Dear ${name}, 
+  //   function handleSubmit(e) {
+  //     e.preventDefault();
+  //     fetch("/", {
+  //       method: "post",
+  //       action: "/action_page.php",
+  //       target: "_blank",
+  //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //       body: encode({ "form-name": "contact", name, email, message }),
+  //     })
+  //       .then(() => alert(`
+  // Dear ${name}, 
 
-I have just received your message. Thank you for writing to me. 
+  // I have just received your message. Thank you for writing to me. 
 
-I'm working on your request and will get in touch as soon as possible. 
+  // I'm working on your request and will get in touch as soon as possible. 
 
-If it is an urgent matter, please call me on +447 951 255 944. I am happy to be of your assistance. 
+  // If it is an urgent matter, please call me on +447 951 255 944. I am happy to be of your assistance. 
 
-Kind regards, 
-PF
-    `))
-      .catch((error) => alert(error));
-  }
+  // Kind regards, 
+  // PF
+  //     `))
+  //       .catch((error) => alert(error));
+  //   }
 
   const [zoom, setZoom] = useState(10)
 
@@ -68,19 +68,19 @@ PF
     }, 1000);
   }, [])
 
-  // const form = useRef();
+  const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  //   emailjs.sendForm('service_u7pjc3s', 'template_0puyrt9', form.current, 'CJvtl4boYxE2sk9c7')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //         console.log("Message sent");
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  // };
+    emailjs.sendForm('service_u7pjc3s', 'template_0puyrt9', form.current, 'CJvtl4boYxE2sk9c7')
+      .then((result) => {
+        console.log(result.text);
+        console.log("Message sent");
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
 
   return isLoaded ? (
     <section className='sectionC'>
@@ -108,8 +108,8 @@ PF
         {/* https://www.w3schools.com/react/react_forms.asp */}
         <form
           name='contact'
-          // ref={form}
-          onSubmit={handleSubmit}
+          ref={form}
+          onSubmit={sendEmail}
           className='formC'
         // method='post'
         // action="/action_page.php"
