@@ -5,9 +5,9 @@ const Greeting = () => {
     var hours = date.getHours();
     var greet;
 
-    if (hours >= 7 && hours <= 12) {
+    if (hours >= 6 && hours <= 11.59) {
         greet = "morning";
-    } else if (hours >= 12 && hours <= 16) {
+    } else if (hours >= 12 && hours <= 17.59) {
         greet = "afternoon";
     } else {
         greet = "evening";

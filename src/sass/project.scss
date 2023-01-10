@@ -10,12 +10,8 @@
     top: 500px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 70vw;
     font-size: large;
-    text-align: justify;
-    text-justify: inter-word;
     color: $white;
-    border: $b-on;
 }
 
 .imagesPro {
@@ -26,14 +22,11 @@
     grid-column-gap: 170px;
     margin-top: 30px;
     margin-bottom: 50px;
-    align-items: center;
-    // justify-content: center;
-    // height: 210px;
-    border: $b-off;
+    place-items: center;
 }
 
 .imgPro {
-    border: $b-on;
+    border: 2px solid $white;
     width: 350px;
     height: 250px;
 }

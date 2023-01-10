@@ -1,5 +1,5 @@
 import React from 'react'
-import './services.scss'
+import '../sass/services.scss'
 
 import html from "../images/services/html.jpg"
 import css from "../images/services/css.jpg"
@@ -11,6 +11,7 @@ import sql from "../images/services/sql.jpg"
 import google from "../images/services/google-cloud.jpg"
 import netlify from "../images/services/netlify.png"
 import vsc from "../images/services/visual-studio-code.jpeg"
+import chatgpt from "../images/services/chat-gpt.png"
 import github from "../images/services/github.png"
 
 const Services = () => {
@@ -102,12 +103,24 @@ const Services = () => {
         </div> */}
       </div>
 
-      <h4 className='h4S'>CODE EDITOR & VERSION CONTROL AND COLLABORATION SOFTWARE</h4>
-      <div className='editControlS'>
+      <h4 className='h4S'>CODE EDITOR SOFTWARE</h4>
+      <div className='editorS'>
         <div className='title_logoS'>
           <p className='pS'>Visual Studio Code</p>
           <img src={vsc} alt="Visual Studio Code Logo" />
         </div>
+      </div>
+
+      <h4 className='h4S'>ARTIFICIAL INTELLIGENCE SOFTWARE</h4>
+      <div className='aiS'>
+        <div className='title_logoS'>
+          <p className='pS'>ChatGPT</p>
+          <img src={chatgpt} alt="ChatGPT Logo" />
+        </div>
+      </div>
+
+      <h4 className='h4S'>VERSION CONTROL AND COLLABORATION SOFTWARE</h4>
+      <div className='controlS'>
         <div className='title_logoS'>
           <p className='pS'>GitHub</p>
           <img src={github} alt="GitHub Logo" />

@@ -1,0 +1,78 @@
+.sectionH {
+  margin-left: 20%;
+  padding: 50px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.figureH {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imgH {
+  width: 54vw;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.figcaptionH {
+  position: absolute;
+  top: 70%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  color: black;
+}
+
+.h5H {
+  padding-left: 70px;
+}
+
+.h3H {
+  padding-left: 30px;
+}
+
+.h1H {
+  padding-left: 20px;
+  color: hsl(205deg, 63%, 48%);
+}
+
+.h4H {
+  padding-left: 50px;
+}
+
+.buttonH {
+  position: absolute;
+  top: 90%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 195px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+.buttonH:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.iH {
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 700px) {
+  .sectionH {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=home.css.map */

@@ -1,0 +1,121 @@
+.sectionS {
+  position: absolute;
+  left: 60%;
+  top: 1430px;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  color: white;
+}
+
+.h1S,
+.ulS,
+.h3S,
+.h4S {
+  text-align: center;
+  list-style-position: inside;
+  width: 900px;
+}
+
+.divS {
+  height: 5px;
+  width: 80px;
+  margin-top: 10px;
+  background: hsl(205deg, 78%, 60%);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2.5px;
+}
+
+.ulS {
+  margin-top: 30px;
+  line-height: 1.4;
+}
+
+.h1S,
+.h3S,
+.h4S {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.browser1S {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-row-gap: 45px;
+  grid-column-gap: 45px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
+}
+
+.browser2S,
+.platformS,
+.editorS {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px 200px;
+  grid-row-gap: 45px;
+  grid-column-gap: 45px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
+}
+
+.browser2S {
+  margin-top: -20px;
+}
+
+.serverS,
+.databaseS,
+.editorS,
+.aiS,
+.controlS {
+  display: grid;
+  grid-template-columns: 200px;
+  grid-template-rows: 200px;
+  grid-row-gap: 45px;
+  grid-column-gap: 45px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
+}
+
+.title_logoS {
+  background-color: white;
+  border: 0.2rem solid black;
+  border-radius: 0.8rem;
+  box-shadow: 0.4rem 0.4rem 0 0 black;
+  position: relative;
+  height: 200px;
+}
+
+.title_logoS img {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  transform: translate(-50%, -50%);
+  padding-top: 30px;
+}
+
+.pS {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  margin-top: 35px;
+}
+
+@media screen and (max-width: 700px) {
+  .sectionS {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=services.css.map */

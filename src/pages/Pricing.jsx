@@ -1,5 +1,5 @@
 import React from 'react'
-import './pricing.scss'
+import '../sass/pricing.scss'
 
 const Pricing = () => {
   return (

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import logo from "../images/navbar/logo.jpg"
 import photo from "../images/navbar/photo.jpg"
 
-import './navbar.scss'
+import '../sass/navbar.scss'
 
 import { FaHome, FaUser, FaWindows, FaEnvelope, FaWhatsapp, FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
@@ -15,8 +15,8 @@ const Navbar = () => {
   return (
     <nav>
       <section className='sectionN'>
-        <img src={logo} alt="Logo" className='logoN' title="Company Logo" />
-        <img src={photo} alt="Photo" className='photoN' title="Photo" />
+        <img src={logo} alt="Company Logo" className='logoN' title="Company Logo" />
+        <img src={photo} alt="Personal Photo" className='photoN' title="Personal Photo" />
 
         <ul className='ulN'>
           <li className='liN'>

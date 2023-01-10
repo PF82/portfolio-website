@@ -1,59 +1,71 @@
-import React, { useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import './project.scss'
-import data from '../data/portfolio'
+import React from 'react'
+import '../sass/project.scss'
+import { Link, useParams } from 'react-router-dom'
+import projectsData from '../data/portfolio'
+
 
 const Project = () => {
 
-  // const { id } = useParams()
-  const [projects] = useState(data);
+  // retrieve params from url
+  const params = useParams()
 
-  console.log(projects);
+  const [currentProjectId, setCurrentProjectId] = React.useState(null)
+  const [currentProjectData, setCurrentProjectData] = React.useState(null)
 
-  return (
-    <section className='sectionPD'>
-      <div>
-        {projects.map((project) => {
-          const {
-            id,
-            project_images,
-            title,
-            technologies,
-            development_time,
-            client,
-            price,
-            date,
-            highlight_features,
-            download
-          } = project;
+  React.useEffect(() => {
+    // save param id on currentProjectId (using useState)
+    if (params?.projectId) {
+      setCurrentProjectId(params.projectId)
+    }
 
-          return (
-            <section className='sectionPD' key={id} >
-              <div className='imgPD'>
-                <img src={project_images} alt={title} />
-              </div>
-              <div className='dataPD'>
-                <p><span className='projectData'>Title:</span>  {title}</p>
-                <p><span className='projectData'>Technologies:</span>  {technologies}</p>
-                <p><span className='projectData'>Development Time:</span>  {development_time}</p>
-                <br />
-                <p><span className='projectData'>Client:</span>  {client}</p>
-                <p><span className='projectData'>Price:</span>  {price}</p>
-                <p><span className='projectData'>Date:</span>  {date}</p>
-                <br />
-                <p><span className='projectData'>Highlight Features:</span>  {highlight_features}</p>
-                <p><span className='projectData'>Download:</span>  {download}</p>
-                <br />
-                <Link to="/portfolio" >
-                  <button >Back to Portfolio</button>
-                </Link>
-              </div>
-            </section>
-          );
+  }, [params])
+
+  React.useEffect(() => {
+    // when currentProjectId changes, if is already there, then we filter the portfolio data to see which one 
+    // has the same ID as the ID in the url params
+
+    if (currentProjectId) {
+      const currentProjectData = projectsData.filter((project) => {
+        return project.id == currentProjectId
+      })
+
+      if (currentProjectData) {
+        setCurrentProjectData(currentProjectData[0])
+      }
+    }
+
+  }, [currentProjectId])
+
+  return currentProjectData ?
+    <section className='sectionPro' key={currentProjectData} >
+      <div className="imagesPro">
+        {currentProjectData.project_images.map((img, index) => {
+          return <img 
+          className='imgPro'
+          src={img} 
+          alt={`${currentProjectData.title}-${index}`} />
         })}
       </div>
-    </section>
-  )
+      <br />
+      <div className='dataPro'>
+        <p><span>Title:</span>  {currentProjectData.title}</p>
+        <p><span>Technologies:</span>  {currentProjectData.web_technologies}</p>
+        <p><span>Development Time:</span>  {currentProjectData.development_time}</p>
+        <br />
+        <p><span>Client:</span>  {currentProjectData.client}</p>
+        <p><span>Price:</span>  {currentProjectData.price}</p>
+        <p><span>Date:</span>  {currentProjectData.date}</p>
+        <br />
+        <span>Highlight Features:</span>
+        <p className='pPro'>  {currentProjectData.highlight_features}</p>
+        <br />
+        <p><span>Download:</span>  {currentProjectData.download}</p>
+        <br />
+        <Link to="/portfolio" >
+          <button className='buttonPro' >Back to Portfolio</button>
+        </Link>
+      </div>
+    </section> : <div>Loading...</div>
 }
 
 export default Project

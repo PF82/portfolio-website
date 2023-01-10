@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import './contact.scss'
+import React, { useState, useEffect} from 'react';
+import '../sass/contact.scss'
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import { FaEnvelope } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import { ImMobile } from "react-icons/im";
 import { IoIosSend } from "react-icons/io";
+// import emailjs from '@emailjs/browser';
 
 const containerStyle = {
   width: '100%',
@@ -67,6 +68,20 @@ PF
     }, 1000);
   }, [])
 
+  // const form = useRef();
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs.sendForm('service_u7pjc3s', 'template_0puyrt9', form.current, 'CJvtl4boYxE2sk9c7')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //         console.log("Message sent");
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     });
+  // };
+
   return isLoaded ? (
     <section className='sectionC'>
       <h1 className='h1C'>CONTACT ME</h1>
@@ -93,6 +108,7 @@ PF
         {/* https://www.w3schools.com/react/react_forms.asp */}
         <form
           name='contact'
+          // ref={form}
           onSubmit={handleSubmit}
           className='formC'
         // method='post'

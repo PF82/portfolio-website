@@ -1,0 +1,180 @@
+nav {
+  margin: 0;
+  padding: 0;
+  width: 20%;
+  background-color: black;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.sectionN {
+  width: 100%;
+  border: none;
+}
+
+.logoN {
+  width: 80px;
+  height: 80px;
+  pointer-events: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logoN {
+    -webkit-animation: logo-spin infinite 20s linear;
+            animation: logo-spin infinite 20s linear;
+  }
+}
+@-webkit-keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.photoN {
+  display: block;
+  margin: 30px auto;
+  max-width: 60%;
+  border-radius: 50%;
+}
+
+.ulN {
+  margin-left: 20px;
+  border: none;
+}
+
+.liN {
+  width: 100%;
+  padding-left: 60px;
+  line-height: 40px;
+  list-style-type: none;
+  border: none;
+}
+
+.iconNH,
+.iconNA,
+.iconNS,
+.iconNP,
+.iconNPR,
+.iconNR,
+.iconNC {
+  display: inline-flex;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  color: white;
+  border: none;
+}
+
+.iconNH {
+  margin-top: -5px;
+}
+
+.iconNA {
+  margin-top: -7px;
+}
+
+.iconNS {
+  margin-top: -5px;
+}
+
+.iconNP {
+  margin-top: -6px;
+}
+
+.iconNPR {
+  margin-top: -6px;
+}
+
+.iconNR {
+  margin-top: -5px;
+}
+
+.iconNC {
+  margin-top: -5px;
+}
+
+.linkN {
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  border: none;
+}
+
+.liN:hover {
+  background-color: white;
+  color: black;
+}
+.liN:hover .iconNH,
+.liN:hover .iconNA,
+.liN:hover .iconNS,
+.liN:hover .iconNP,
+.liN:hover .iconNPR,
+.liN:hover .iconNR,
+.liN:hover .iconNC {
+  color: black;
+}
+.liN:hover .linkN {
+  color: black;
+}
+
+.iN {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkedinN {
+  color: #0e76a8;
+}
+
+.githubN {
+  color: white;
+}
+
+.whatsappN {
+  color: #25d366;
+}
+
+.linkedinN,
+.whatsappN,
+.githubN {
+  width: 35px;
+  height: 35px;
+  margin: 30px 5px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.smallLogoN {
+  margin-top: 5px;
+  margin-left: 3px;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}/*# sourceMappingURL=navbar.css.map */

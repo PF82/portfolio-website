@@ -1,0 +1,47 @@
+.sectionA {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  font-size: large;
+  text-align: justify;
+  text-justify: inter-word;
+  color: white;
+}
+
+.h1A {
+  text-align: center;
+}
+
+.divA {
+  height: 5px;
+  width: 80px;
+  margin: 10px 0;
+  background: hsl(205deg, 78%, 60%);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2.5px;
+}
+
+.aA:link {
+  text-decoration: none;
+}
+
+.aA:visited {
+  color: blue;
+}
+
+.aA:hover {
+  color: red;
+}
+
+.aA:active {
+  color: rgb(16, 53, 16);
+}
+
+@media screen and (max-width: 700px) {
+  .sectionA {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=about.css.map */

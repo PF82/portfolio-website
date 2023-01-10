@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import './portfolio.scss'
+import '../sass/portfolio.scss'
 import projectsData from '../data/portfolio'
 
 const Portfolio = () => {

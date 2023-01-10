@@ -1,0 +1,73 @@
+.sectionPro {
+  position: absolute;
+  left: 60%;
+  top: 500px;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  color: white;
+}
+
+.imagesPro {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-row-gap: 70px;
+  grid-column-gap: 170px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  place-items: center;
+}
+
+.imgPro {
+  border: 2px solid white;
+  width: 350px;
+  height: 250px;
+}
+
+.dataPro {
+  position: absolute;
+  left: 50%;
+  top: 800px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.dataPro span {
+  color: black;
+  font-weight: bold;
+}
+
+.pPro {
+  list-style-position: inside;
+}
+
+.buttonPro {
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-bottom-right-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.buttonPro:hover {
+  cursor: pointer;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-bottom-right-radius: 10px;
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .sectionP {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=project.css.map */

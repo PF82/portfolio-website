@@ -7,7 +7,7 @@
 .sectionS {
     position: absolute;
     left: 60%;
-    top: 1120px;
+    top: 1430px;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: large;
@@ -60,7 +60,7 @@
 
 .browser2S,
 .platformS,
-.editControlS {
+.editorS {
     display: grid;
     grid-template-columns: 200px 200px;
     grid-template-rows: 200px 200px;
@@ -78,7 +78,10 @@
 }
 
 .serverS,
-.databaseS {
+.databaseS,
+.editorS,
+.aiS,
+.controlS {
     display: grid;
     grid-template-columns: 200px;
     grid-template-rows: 200px;
