@@ -11,7 +11,7 @@ const About = () => {
         visually aesthetic, responsive and accessible websites and web applications.</p>
       <br />
       <p>Basic knowledge in a wide variety of programming languages (please refer to the 'Services'
-        page for more). And a satisfactory understanding of the principles and techniques of building websites
+        page for more), and a satisfactory understanding of the principles and techniques of building websites
         and applications from inception through completion. Ability to adapt in both{' '}
         <a
           href="https://www.indeed.com/career-advice/career-development/what-is-a-self-starter"
@@ -26,16 +26,12 @@ const About = () => {
           className='aA'
           href="https://www.freecodecamp.org/"
           target="_blank"
+          rel="noreferrer"
         ><b>freeCodeCamp</b></a>, with the assistance of a friend (using Microsoft Visual Studio Live Share)
         that is a Full Stack Web Developer. The course comprised four modules: Responsive Web Design, JavaScript Algorithms
-        and Data Structures, Front End Development Libraries and Data Visualization. Additionally, I also read several
-        articles and books about Web Development as well as started getting familiar with an artificial intelligence model
-        called chatGPT which was launched by{' '}
-        <a
-          className='aA'
-          href="https://openai.com/"
-          target="_blank"
-        ><b>OpenAI</b></a>{' '} in November 2022.
+        and Data Structures, Front End Development Libraries and Data Visualization. Additionally, read several books and
+        articles about Web Development as well as started getting familiar with an artificial intelligence model
+        called chatGPT.
       </p>
       <br />
       <p>You can find more about my education and work experience by clicking on the button
@@ -43,7 +39,9 @@ const About = () => {
         <a
           className='aA'
           href="https://www.linkedin.com/"
-          target="_blank"><b>LinkedIn</b>
+          target="_blank"
+          rel="noreferrer"
+          ><b>LinkedIn</b>
         </a>.
       </p>
     </section>

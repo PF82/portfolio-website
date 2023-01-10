@@ -5,7 +5,7 @@ const people = [
     name: 'julio mauro',
     title: 'full stack web developer',
     quote: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, totam. Provident quos ad earum natus temporibus totam inventore, incidunt iste, voluptas id illum itaque iure eius amet. Ducimus, impedit tempore?',
-    date: 'Published on December 2022'
+    date: 'Published on January 2023'
   },
 
   {
@@ -14,7 +14,7 @@ const people = [
     name: 'ines fernandes',
     title: 'small business owner',
     quote: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, totam. Provident quos ad earum natus temporibus totam inventore, incidunt iste, voluptas id illum itaque iure eius amet. Ducimus, impedit tempore?',
-    date: 'Published on January 2023'
+    date: 'Published on February 2023'
   },
 
   {
@@ -23,7 +23,7 @@ const people = [
     name: 'carla machado',
     title: 'entrepreneur',
     quote: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, totam. Provident quos ad earum natus temporibus totam inventore, incidunt iste, voluptas id illum itaque iure eius amet. Ducimus, impedit tempore?',
-    date: 'Published on February 2023'
+    date: 'Published on March 2023'
   },
 ];
 

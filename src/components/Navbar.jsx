@@ -6,7 +6,7 @@ import photo from "../images/navbar/photo.jpg"
 
 import '../sass/navbar.scss'
 
-import { FaHome, FaUser, FaWindows, FaEnvelope, FaWhatsapp, FaLinkedin, FaFacebook, FaGithub } from "react-icons/fa";
+import { FaHome, FaUser, FaWindows, FaEnvelope, FaWhatsapp, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
 // import { RiMoneyPoundCircleFill } from "react-icons/ri";
 import { MdReviews } from "react-icons/md";
@@ -50,23 +50,23 @@ const Navbar = () => {
         </ul>
 
         <i className='iN'>
-          <a href="https://www.linkedin.com/" title="LinkedIn" target="_blank">
+          <a href="https://www.linkedin.com/" title="LinkedIn" target="_blank" rel="noreferrer">
             <FaLinkedin name="lklas" className='linkedinN' />
           </a>
-          {/* <a href="https://www.facebook.com/" title="Facebook" target="_blank">
+          {/* <a href="https://www.facebook.com/" title="Facebook" target="_blank" rel="noreferrer">
           <FaFacebook className='facebookN' />
         </a> */}
-          <a href="https://www.github.com/" title="GitHub" target="_blank">
+          <a href="https://www.github.com/" title="GitHub" target="_blank" rel="noreferrer">
             <FaGithub className='githubN' />
           </a>
-          <a href="https://www.whatsapp.com/" title="WhatsApp" target="_blank">
+          <a href="https://www.whatsapp.com/" title="WhatsApp" target="_blank" rel="noreferrer">
             <FaWhatsapp className='whatsappN' />
           </a>
         </i>
 
         <footer>
           <span className="copy-right">© 2022, Powered by </span>
-          <a href="https://www.pf.co.uk/" title="Company Logo" target="_blank">
+          <a href="https://www.pf.co.uk/" title="Company Logo" target="_blank" rel="noreferrer">
             <img src={logo} alt="small-logo" className='smallLogoN' />
           </a>
         </footer>

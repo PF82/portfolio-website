@@ -36,30 +36,6 @@ const Contact = () => {
       .join("&");
   }
 
-  //   function handleSubmit(e) {
-  //     e.preventDefault();
-  //     fetch("/", {
-  //       method: "post",
-  //       action: "/action_page.php",
-  //       target: "_blank",
-  //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //       body: encode({ "form-name": "contact", name, email, message }),
-  //     })
-  //       .then(() => alert(`
-  // Dear ${name}, 
-
-  // I have just received your message. Thank you for writing to me. 
-
-  // I'm working on your request and will get in touch as soon as possible. 
-
-  // If it is an urgent matter, please call me on +447 951 255 944. I am happy to be of your assistance. 
-
-  // Kind regards, 
-  // PF
-  //     `))
-  //       .catch((error) => alert(error));
-  //   }
-
   const [zoom, setZoom] = useState(10)
 
   useEffect(() => {
@@ -74,12 +50,24 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm('service_u7pjc3s', 'template_0puyrt9', form.current, 'CJvtl4boYxE2sk9c7')
-      .then((result) => {
-        console.log(result.text);
-        console.log("Message sent");
-      }, (error) => {
-        console.log(error.text);
-      });
+    fetch("/", {
+      method: "post",
+      action: "/action_page.php",
+      target: "_blank",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, message }),
+    })
+      .then(() => alert(`
+  Dear ${name}, 
+
+  Thank you for writing to me. 
+
+  I have just received your message, and I will be in touch soon. 
+
+  Kind regards, 
+  Pedro Fernandes
+      `))
+      .catch((error) => alert(error));
   };
 
   return isLoaded ? (
@@ -91,15 +79,15 @@ const Contact = () => {
         <div className='flexboxC'>
           <div className='boxC box1C'>
             <FaEnvelope className='emailC' size={30} />
-            <p>pf@gmail.com</p>
+            <p>pedrotcfernandes@gmail.com</p>
           </div>
           <div className='boxC box2C'>
             <MdLocationPin className='locationC' size={30} />
-            <p>London, UK</p>
+            <p>Islington, London, UK</p>
           </div>
           <div className='boxC box3C'>
             <ImMobile className='phoneNrC' size={30} />
-            <p>+447 951 255 944</p>
+            <p>00447 951 255 944</p>
           </div>
         </div>
 
