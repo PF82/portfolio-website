@@ -1,0 +1,142 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// main projects
+
+.sectionMP {
+    position: absolute;
+    left: 50%;
+    top: 710px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: large;
+    color: $white;
+}
+
+.containerMP {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 45px;
+    grid-column-gap: 45px;
+    border-radius: 5px;
+    text-align: center;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.imageMP {
+    height: 195px;
+    margin-bottom: -1px;
+}
+
+.imageMP img {
+    width: 100%;
+    max-height: 100%;
+}
+
+.title_detailsMP {
+    width: 350px;
+    height: 130px;
+    margin: 0 auto;
+    position: relative;
+    background-color: $black;
+    color: $white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.h4MP_h5MP {
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 0 10px;
+    line-height: 1.4;
+}
+
+.image_title_detailsMP:hover {
+    opacity: 0.5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+// media queries
+
+@include mq(320px, 480px) {
+    .sectionMP {
+        top: 1630px;
+        height: 2820px;
+    }
+
+    .containerMP {
+        display: block;
+        width: 300px;
+    }
+
+    .imageMP {
+        height: 195px;
+        margin-bottom: -27px;
+    }
+
+    .title_detailsMP {
+        width: 300px;
+        height: 100px;
+        margin-bottom: 40px;
+    }
+
+    .h4MP {
+        font-size: $fs-16;
+    }
+
+    .h5MP {
+        font-size: $fs-14;
+    }
+}
+
+@include mq(481px, 768px) {
+    .sectionMP {
+        top: 1910px;
+    }
+
+    .containerMP {
+        grid-template-columns: 1fr;
+        grid-row-gap: 50px;
+        grid-column-gap: 50px;
+    }
+}
+
+@include mq(769px, 1365px) {
+
+    .containerMP {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin-top: 595px;
+        margin-bottom: 40px;
+    }
+
+    .image_title_detailsMP {
+        height: 325px;
+    }
+
+}
+
+@include mq(1366px, 1599px) {
+    .containerMP {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
+        margin-top: -75px;
+    }
+}
+
+@include mqmin(1600px) {
+    .containermP {
+        grid-row-gap: 45px;
+        grid-column-gap: 45px;
+    }
+}

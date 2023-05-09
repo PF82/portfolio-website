@@ -1,0 +1,28 @@
+@import "../sass/colors-fonts-borders";
+@import "../sass/mixins";
+
+// read more and show less button
+
+.divRM-1 {
+    font-family: "Roboto", sans-serif, "Times New Roman", Times, serif;
+    font-size: $fs-16;
+}
+
+.text {
+    display: inline;
+    width: 100%;
+}
+
+.read-or-hide {
+    color: $black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+// media queries
+
+@include mq(320px, 480px) {
+    .divRM-1 {
+        font-size: $fs-14;
+    }
+}

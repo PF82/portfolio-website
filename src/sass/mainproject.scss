@@ -1,0 +1,491 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// main project  
+
+.sectionMPro {
+    width: 80%;
+    margin-left: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-and-img {
+    z-index: 1;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    background: $grey-light;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgAMPro {
+    width: auto;
+    max-width: 90.3%;
+    max-height: 90.3%;
+}
+
+.iconRMPro,
+.iconLMPro {
+    position: absolute;
+    top: 50%;
+    right: 0.8%;
+    width: 40px;
+    height: 40px;
+    color: $black;
+}
+
+.iconLMPro {
+    left: 0.8%;
+    color: $black;
+}
+
+.iconRMPro:hover,
+.iconLMPro:hover,
+.iconCMPro:hover {
+    color: $color-4;
+    cursor: pointer;
+}
+
+.iconCMPro {
+    position: absolute;
+    top: 0.8%;
+    right: 0.8%;
+    width: 40px;
+    height: 40px;
+    color: $black;
+}
+
+.imagesMPro {
+    width: 79%;
+    padding: 10px;
+}
+
+.imgBMPro {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    width: 300px;
+    height: 200px;
+}
+
+.dataMPro {
+    position: absolute;
+    left: 60%;
+    top: 680px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 50vh;
+    text-align: center;
+}
+
+.dataMPro span {
+    color: $black;
+    font-weight: bold;
+}
+
+.pMPro {
+    list-style-position: inside;
+}
+
+.buttonMPro {
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: 2px solid $white;
+    border-bottom: 2px solid $white;
+    border-bottom-right-radius: 10px;
+    color: $white;
+    font-size: $fs-16;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.buttonMPro:hover {
+    cursor: pointer;
+    border-right: 2px solid $black;
+    border-bottom: 2px solid $black;
+    border-bottom-right-radius: 10px;
+    color: $black;
+}
+
+// portfolio-main-projects.js 
+
+.ulMPro li {
+    font-size: $fs-14;
+}
+
+.divMPro {
+    text-decoration: underline;
+}
+
+.divMPro:hover {
+    color: $color-7;
+    font-weight: bold;
+}
+
+// media queries
+
+@include mq(320px, 480px) {
+    .sectionMPro {
+        width: 100vw;
+        margin-left: 0%;
+        padding: 0px;
+    }
+
+    .buttons-and-img {
+        top: 45px;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .imgAMPro {
+        width: auto;
+        max-width: 86%;
+        max-height: 86%;
+    }
+
+    .iconRMPro,
+    .iconLMPro {
+        width: 25px;
+        height: 25px;
+        right: 0.1%;
+    }
+
+    .iconLMPro {
+        left: -0.2%;
+    }
+
+    .iconCMPro {
+        top: 0.4%;
+    }
+
+    .iconCMPro {
+        width: 25px;
+        height: 25px;
+    }
+
+    .imagesMPro {
+        margin-top: 55px;
+        width: 100vw;
+    }
+
+    .imgBMPro {
+        width: 300px;
+        height: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    .dataMPro {
+        left: 50%;
+        top: 1575px;
+        width: 100vw;
+        height: 1000px;
+        padding: 5px;
+        height: 50vh;
+        font-size: $fs-14;
+    }
+
+    .buttonMPro {
+        margin-bottom: 90px;
+        font-size: $fs-14;
+    }
+}
+
+@include mq(481px, 768px) {
+    .sectionMPro {
+        margin-left: 27%;
+        width: 73%;
+    }
+
+    .buttons-and-img {
+        width: 73%;
+    }
+
+    .imgAMPro {
+        width: auto;
+        max-width: 88%;
+        max-height: 88%;
+    }
+
+    .iconRMPro,
+    .iconLMPro {
+        width: 32px;
+        height: 32px;
+        right: 0.1%;
+    }
+
+    .iconLMPro {
+        left: 0.1%;
+    }
+
+    .iconCMPro {
+        top: 0.2%;
+        right: 0.2%;
+    }
+
+    .iconCMPro {
+        width: 32px;
+        height: 32px;
+    }
+
+    .imagesMPro {
+        width: 100vw;
+    }
+
+    .imgBMPro {
+        width: 235px;
+        height: 150px;
+    }
+
+    .dataMPro {
+        position: absolute;
+        left: 63.5%;
+        top: 855px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 60vh;
+    }
+
+    .buttonMPro {
+        margin-bottom: -30px;
+    }
+}
+
+@include mq(769px, 1023px) {
+    .imagesMPro {
+        position: absolute;
+        top: 190px;
+        left: 64%;
+        transform: translate(-50%, -50%);
+        width: 72%;
+        height: auto;
+        border: $b-on;
+    }
+
+    .imgBMPro {
+        width: 225px;
+        height: 160px;
+    }
+
+    .iconRMPro,
+    .iconLMPro {
+        right: 0.05%;
+    }
+
+    .iconLMPro {
+        left: 0.05%;
+    }
+
+    .iconCMPro {
+        right: 0.05%;
+        top: 0.2%;
+    }
+
+    .buttons-and-img {
+        width: 100%;
+        height: 100vh;
+        margin-top: -35px;
+    }
+
+    .dataMPro {
+        left: 70%;
+        margin: 0 auto;
+        width: 80%;
+        border: $b-on;
+    }
+}
+
+@include mq(1024px, 1279px) {
+    .sectionMPro {
+        position: relative;
+    }
+
+    .imagesMPro {
+        position: absolute;
+        top: 180px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 94%;
+        height: auto;
+    }
+
+    .imgBMPro {
+        width: 280px;
+        height: 150px;
+    }
+
+    .dataMPro {
+        position: absolute;
+        top: 600px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 94%;
+        height: auto;
+    }
+}
+
+@include mq(1280px, 1365px) {
+    .sectionMPro {
+        position: relative;
+    }
+
+    .imagesMPro {
+        position: absolute;
+        top: 230px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 94%;
+        height: auto;
+    }
+
+    .imgBMPro {
+        width: 300px;
+        height: 200px;
+    }
+
+    .imgAMPro {
+        max-width: 89%;
+        max-height: 89%;
+    }
+
+    .dataMPro {
+        position: absolute;
+        top: 700px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 94%;
+        height: 460px;
+    }
+}
+
+@include mq(1366px, 1599px) {
+    .sectionMPro {
+        position: relative;
+    }
+
+    .imagesMPro {
+        position: absolute;
+        top: 245px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 94%;
+        height: auto;
+    }
+
+    .imgBMPro {
+        width: 320px;
+        height: 210px;
+        margin-bottom: 3px;
+    }
+
+    .imgAMPro {
+        max-width: 89.5%;
+        max-height: 89.5%;
+    }
+
+    .dataMPro {
+        position: absolute;
+        top: 725px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 94%;
+        height: 460px;
+    }
+}
+
+@include mqmin(1920px) {
+    .dataMPro {
+        top: 840px;
+        height: 470px;
+    }
+
+    .imgAMPro {
+        max-width: 91.5%;
+        max-height: 91.5%;
+    }
+
+    .imgBMPro {
+        width: 370px;
+        height: 260px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@include mqmwmh(360px, 740px) {
+    .dataMPro {
+        margin-top: 25px;
+    }
+}
+
+@include mqmwmh(375px, 812px) {
+    .dataMPro {
+        top: 1595px;
+    }
+}
+
+@include mqmwmh(390px, 844px) {
+    .dataMPro {
+        top: 1600px;
+    }
+
+    .iconRMPro,
+    .iconLMPro {
+        right: 0.3%;
+    }
+
+    .iconLMPro {
+        left: 0.2%;
+    }
+}
+
+@include mqmwmh(414px, 896px) {
+    .dataMPro {
+        top: 1615px;
+    }
+
+    .iconRMPro,
+    .iconLMPro {
+        right: 0.4%;
+    }
+
+    .iconLMPro {
+        left: 0.4%;
+    }
+}
+
+@include mqmwmh(393px, 851px) {
+    .dataMPro {
+        top: 1605px;
+    }
+
+    .iconRMPro,
+    .iconLMPro {
+        right: 0.2%;
+    }
+
+    .iconLMPro {
+        left: 0.2%;
+    }
+}
+
+@include mqmwmh(360px, 640px) {
+    .dataMPro {
+        top: 1550px;
+    }
+}

@@ -1,0 +1,411 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// contact 
+
+.sectionC {
+    font-size: $fs-16;
+    margin-left: 20%;
+    min-height: 100vh;
+    position: relative;
+    color: $white;
+}
+
+.h1C {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.divC {
+    height: 5px;
+    width: 80px;
+    margin-top: 10px;
+    background: $color-7;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5px;
+}
+
+.containerC {
+    width: 1100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.flexboxC {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 30px 0;
+}
+
+.boxC {
+    width: 33.33%;
+    color: $white;
+    background-color: $black;
+    text-align: center;
+    height: 70px;
+}
+
+.box2C,
+.box3C {
+    border-left: 2px solid $white;
+}
+
+.emailC {
+    margin-top: 7px;
+}
+
+.box1C p {
+    margin-top: 0px;
+}
+
+.locationC {
+    margin-top: 8px;
+}
+
+.phoneNrC {
+    margin-top: 10px;
+}
+
+.box3C p {
+    margin-bottom: 4px;
+}
+
+.formC,
+.labelC,
+.inputC,
+.textareaC {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    font-size: $fs-16;
+}
+
+.textInputA,
+.textInputC {
+    width: 547.5px;
+    float: left;
+}
+
+.textInputB,
+.textInputD {
+    width: 547.5px;
+    float: right;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.inputC,
+.textareaC {
+    font-size: $fs-16;
+    padding-left: 9px;
+    font-family: inherit;
+}
+
+::placeholder {
+    font-size: $fs-16;
+    font-family: inherit;
+}
+
+.buttonC {
+    margin-top: 10px;
+    padding-top: 1px;
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: $fs-16;
+    color: $white;
+    background-color: $black;
+    font-family: inherit;
+    font-weight: bold;
+    border: $b-off;
+}
+
+.buttonC:hover {
+    color: $black;
+    background-color: $white;
+    cursor: pointer;
+    font-weight: bold;
+    border: $b-off;
+}
+
+.sendC {
+    margin-top: 3px;
+    padding-bottom: 5px;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.map {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 40px;
+}
+
+// media queries
+
+@include mq(320px, 480px) {
+    .sectionC {
+        font-size: $fs-14;
+        margin-left: 0%;
+    }
+
+    .h1C {
+        padding-top: 70px;
+    }
+
+    .containerC {
+        width: 90%;
+        font-size: $fs-16;
+    }
+
+    .flexboxC {
+        display: none;
+    }
+
+    .boxC {
+        height: 45px;
+    }
+
+    .formC {
+        margin-top: 10px;
+    }
+
+    .emailC,
+    .locationC,
+    .phoneNrC {
+        width: 25px;
+        height: 25px;
+    }
+
+    .boxC p {
+        display: none;
+    }
+
+    .locationC {
+        margin-top: 7px;
+    }
+
+    .phoneNrC {
+        margin-top: 7px;
+    }
+
+    .textInputA,
+    .textInputB,
+    .textInputC,
+    .textInputD {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .inputC,
+    .textareaC {
+        padding-left: 9px;
+    }
+
+    ::placeholder {
+        font-size: $fs-14;
+    }
+
+    .buttonC {
+        font-size: $fs-14;
+    }
+
+    .map {
+        height: 550px;
+        width: 100%;
+        z-index: -1;
+        margin-bottom: 80px;
+        overflow: hidden;
+    }
+}
+
+@include mq(481px, 768px) {
+    .sectionC {
+        margin-left: 27%;
+        height: 1180px;
+    }
+
+    .h1C {
+        padding-top: 30px;
+    }
+
+    .containerC {
+        width: 95%;
+    }
+
+    .boxC {
+        height: 70px;
+    }
+
+    .boxC {
+        font-size: $fs-12;
+    }
+
+    .formC {
+        margin-top: 30px;
+    }
+
+    .emailC,
+    .locationC,
+    .phoneNrC {
+        margin-top: 12px;
+    }
+
+    .emailC,
+    .locationC,
+    .phoneNrC {
+        width: 25px;
+        height: 25px;
+    }
+
+    .textInputA,
+    .textInputB,
+    .textInputC,
+    .textInputD {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .map {
+        height: 550px;
+        width: 100%;
+    }
+}
+
+@include mq(769px, 1023px) {
+    .sectionC {
+        margin-left: 28%;
+    }
+
+    .h1C {
+        padding-top: 30px;
+    }
+
+    .containerC {
+        width: 95%;
+    }
+
+    .boxC {
+        height: 70px;
+        font-size: $fs-12;
+    }
+
+    .formC {
+        margin-top: 30px;
+    }
+
+    .emailC,
+    .locationC,
+    .phoneNrC {
+        margin-top: 12px;
+    }
+
+    .emailC,
+    .locationC,
+    .phoneNrC {
+        width: 25px;
+        height: 25px;
+    }
+
+    .textInputA,
+    .textInputB,
+    .textInputC,
+    .textInputD {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@include mq(1024px, 1279px) {
+    .sectionC {
+        margin-left: 20%;
+    }
+
+    .containerC {
+        width: 75vw;
+    }
+
+    .textInputA,
+    .textInputB,
+    .textInputC,
+    .textInputD {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@include mq(1280px, 1365px) {
+
+    .containerC {
+        width: 950px;
+    }
+
+    .textInputA,
+    .textInputC {
+        width: 472.5px;
+    }
+
+    .textInputB,
+    .textInputD {
+        width: 472.5px;
+    }
+
+    .map {
+        width: 100%;
+    }
+}
+
+@include mq(1366px, 1599px) {
+
+    .containerC {
+        width: 1050px;
+    }
+
+    .textInputA,
+    .textInputC {
+        width: 522.5px;
+    }
+
+    .textInputB,
+    .textInputD {
+        width: 522.5px;
+    }
+
+    .map {
+        width: 100%;
+        height: 550px;
+    }
+}
+
+@include mqminh(1080px) {
+    .sectionC {
+        height: 950px;
+    }
+}
+
+@include mqmwmh(360px, 640px) {
+
+    .sectionC {
+        z-index: 0;
+    }
+
+}
+
+@include mqmwmh (390px, 844px) {
+    .sectionC {
+        height: 1130px;
+    }
+}

@@ -1,0 +1,505 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// curriculum viate 
+
+.sectionCV {
+    position: absolute;
+    left: 60%;
+    top: 850px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: large;
+    color: $black;
+    padding-bottom: 40px;
+}
+
+// css grid layout
+
+// right-column
+.main-container {
+    height: 1570px;
+    width: 1170px;
+    background-color: $grey-light;
+    position: relative;
+    font-size: $fs-16;
+    line-height: 1.4;
+}
+
+.grid-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-areas:
+        "nav head"
+        "nav main"
+        "nav foot";
+    grid-template-rows: 805px 320px 405px;
+    grid-template-columns: 320px 820px;
+    gap: 10px;
+}
+
+.grid-container>.information-skills-languages {
+    grid-area: nav;
+    background-color: #fff;
+    height: 1550px;
+    width: 320px;
+}
+
+.grid-container>.work-experience {
+    grid-area: head;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.grid-container>.education-and-training {
+    grid-area: main;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.grid-container>.professional-development {
+    grid-area: foot;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.professional-development>h2 {
+    margin-bottom: 10px;
+}
+
+.professional-development>p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+p>a:hover {
+    font-weight: bold;
+}
+
+p>span {
+    margin-top: -7px;
+}
+
+i {
+    color: $color-4;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+// left column
+.information-skills-languages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+// progress bars
+
+.pCV {
+    margin-top: 8px;
+}
+
+.htmlCV-1,
+.cssCV-1,
+.jsCV-1,
+.reactCV-1,
+.photoshopCV-1,
+.englishCV-1,
+.portugueseCV-1,
+.spanishCV-1 {
+    width: 280px;
+    background-color: $grey-light;
+    text-align: center;
+}
+
+.htmlCV-2,
+.cssCV-2,
+.jsCV-2,
+.reactCV-2,
+.photoshopCV-2,
+.englishCV-2,
+.portugueseCV-2,
+.spanishCV-2 {
+    background-color: $color-4;
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+    font-size: $fs-12;
+}
+
+.htmlCV-2 {
+    animation: load1 3s normal forwards;
+
+    @keyframes load1 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 80%;
+        }
+    }
+}
+
+.cssCV-2 {
+    animation: load2 3s normal forwards;
+
+    @keyframes load2 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 70%;
+        }
+    }
+}
+
+.jsCV-2 {
+    animation: load3 3s normal forwards;
+
+    @keyframes load3 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 55%;
+        }
+    }
+}
+
+.reactCV-2 {
+    animation: load4 3s normal forwards;
+
+    @keyframes load4 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 60%;
+        }
+    }
+}
+
+.englishCV-2 {
+    text-align: center;
+    width: 90%;
+    animation: load6 3s normal forwards;
+
+    @keyframes load6 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 90%;
+        }
+    }
+}
+
+.portugueseCV-2 {
+    width: 100%;
+    text-align: center;
+    animation: load7 3s normal forwards;
+
+    @keyframes load7 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+}
+
+.spanishCV-2 {
+    width: 33.33%;
+    text-align: center;
+    animation: load8 3s normal forwards;
+
+    @keyframes load8 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 33.33%;
+        }
+    }
+}
+
+.photoshopCV-2 {
+    width: 65%;
+    text-align: center;
+    animation: load9 3s normal forwards;
+
+    @keyframes load9 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 65%;
+        }
+    }
+}
+
+// media queries
+
+@include mq(320px, 480px) {
+    .sectionCV {
+        position: absolute;
+        left: 50%;
+        top: 285px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: small;
+        height: auto;
+    }
+
+    .main-container {
+        height: auto;
+        width: 100vw;
+        font-size: $fs-14;
+        line-height: 1.4;
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+    .grid-container>.information-skills-languages {
+        width: 95vw;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 2140px;
+    }
+
+    .work-experience {
+        width: 95vw;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .education-and-training {
+        width: 95vw;
+        height: 300px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 55px;
+    }
+
+    .professional-development {
+        display: none;
+    }
+}
+
+@include mq(481px, 768px) {
+    .sectionCV {
+        position: absolute;
+        left: 50%;
+        top: 12px;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        font-size: small;
+        height: auto;
+    }
+
+    .main-container {
+        height: auto;
+        width: 100vw;
+        font-size: $fs-14;
+        line-height: 1.4;
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+    .grid-container>.information-skills-languages {
+        width: 97.5vw;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 2130px;
+    }
+
+    .work-experience {
+        width: 97.5vw;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .education-and-training {
+        width: 97.5vw;
+        height: 305px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+
+    .professional-development {
+        display: none;
+    }
+}
+
+@include mq(769px, 1023px) {
+    .sectionCV {
+        left: 64%;
+        top: 15px;
+    }
+
+    .main-container {
+        height: auto;
+        width: 70vw;
+        font-size: $fs-14;
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+    .grid-container>.information-skills-languages {
+        width: 70vw;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 2140px;
+    }
+
+    .work-experience {
+        width: 70vw;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .education-and-training {
+        width: 70vw;
+        height: 302px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .professional-development {
+        display: none;
+    }
+}
+
+@include mq(1024px, 1279px) {
+    .sectionCV {
+        left: 60%;
+        top: 0px;
+    }
+
+    .main-container {
+        height: auto;
+        width: 75vw;
+        font-size: $fs-14;
+    }
+
+    .grid-container {
+        display: block;
+    }
+
+    .grid-container>.information-skills-languages {
+        width: 75vw;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 2200px;
+    }
+
+    .work-experience {
+        width: 75vw;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .education-and-training {
+        width: 75vw;
+        height: 302px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+
+    .professional-development {
+        display: none;
+    }
+}
+
+@include mq(1280px, 1599px) {
+    .sectionCV {
+        left: 60%;
+        padding-bottom: 20px;
+    }
+
+    .main-container {
+        height: 1635px;
+        width: 1000px;
+        margin-top: -30px;
+        margin-bottom: -10px;
+    }
+
+    .grid-container {
+        grid-template-rows: 860px 320px 415px;
+        grid-template-columns: 280px 690px;
+    }
+
+    .grid-container>.information-skills-languages {
+        height: 1615px;
+        width: 280px;
+    }
+
+    .htmlCV-1,
+    .cssCV-1,
+    .jsCV-1,
+    .reactCV-1,
+    .englishCV-1,
+    .portugueseCV-1,
+    .spanishCV-1 {
+        width: 240px;
+    }
+}
+
+@include mqmwmh(390px, 844px) {
+    .sectionCV {
+        top: 250px;
+    }
+}
+
+@include mqmwmh(414px, 896px) {
+    .sectionCV {
+        top: 235px;
+    }
+}
+
+@include mqmwmh(393px, 851px) {
+    .sectionCV {
+        top: 250px;
+    }
+}
+
+@include mqmwmh(360px, 740px) {
+    .sectionCV {
+        top: 290px;
+    }
+}
+
+@include mqmwmh(360px, 640px) {
+    .sectionCV {
+        top: 290px;
+    }
+}

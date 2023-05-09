@@ -1,0 +1,311 @@
+@import "./colors-fonts-borders";
+@import "./mixins";
+
+// technologies and tools 
+
+.sectionTec {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.divTec {
+    position: absolute;
+    z-index: 1;
+    color: $white;
+    top: 520px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: auto;
+    text-align: center;
+}
+
+.divTec h3 {
+    margin-bottom: 30px;
+}
+
+.containerTec {
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    gap: 45px;
+    margin-bottom: 45px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.title_logoTec {
+    background-color: $white;
+    border: 0.2rem solid $black;
+    border-radius: 0.8rem;
+    box-shadow: 0.4rem 0.4rem 0 0 $black;
+    position: relative;
+    height: 200px;
+}
+
+.title_logoTec img {
+    margin: 0;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    width: 100px;
+    transform: translate(-50%, -50%);
+    padding-top: 30px;
+}
+
+.pTec {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: $black;
+    margin-top: 20px;
+}
+
+// progress bars
+.htmlTec-1,
+.cssTec-1,
+.bootstrapTec-1,
+.jqueryTec-1,
+.jsTec-1,
+.reactjsTec-1,
+.nodejsTec-1,
+.netlifyTec-1,
+.chatgptTec-1,
+.vscTec-1,
+.githubTec-1,
+.vslsTec-1 {
+    margin: 0;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    background-color: $black;
+    text-align: center;
+    border-radius: 10px;
+    color: $white;
+    font-weight: bold;
+}
+
+.htmlTec-2,
+.cssTec-2,
+.bootstrapTec-2,
+.jqueryTec-2,
+.jsTec-2,
+.reactjsTec-2,
+.nodejsTec-2,
+.netlifyTec-2,
+.chatgptTec-2,
+.vscTec-2,
+.githubTec-2,
+.vslsTec-2 {
+    background-color: $color-4;
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+    font-size: $fs-12;
+    border-radius: 10px;
+}
+
+.htmlTec-2 {
+    animation: load9 3s normal forwards;
+
+    @keyframes load9 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 80%;
+        }
+    }
+}
+
+.cssTec-2,
+.githubTec-2 {
+    animation: load10 3s normal forwards;
+
+    @keyframes load10 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 70%;
+        }
+    }
+}
+
+.nodejsTec-2 {
+    animation: load11 3s normal forwards;
+
+    @keyframes load11 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 20%;
+        }
+    }
+}
+
+.bootstrapTec-2 {
+    animation: load12 3s normal forwards;
+
+    @keyframes load12 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 30%;
+        }
+    }
+}
+
+.jsTec-2 {
+    animation: load13 3s normal forwards;
+
+    @keyframes load13 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 55%;
+        }
+    }
+}
+
+.reactjsTec-2 {
+    animation: load14 3s normal forwards;
+
+    @keyframes load14 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 60%;
+        }
+    }
+}
+
+.chatgptTec-2 {
+    animation: load16 3s normal forwards;
+
+    @keyframes load16 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 0%;
+        }
+    }
+}
+
+.netlifyTec-2 {
+    animation: load18 3s normal forwards;
+
+    @keyframes load18 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 75%;
+        }
+    }
+}
+
+.vscTec-2,
+.vslsTec-2 {
+    animation: load19 3s normal forwards;
+
+    @keyframes load19 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 80%;
+        }
+    }
+}
+
+.jqueryTec-2 {
+    animation: load20 3s normal forwards;
+
+    @keyframes load20 {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 25%;
+        }
+    }
+}
+
+// media queries
+
+@include mq(320px, 480px) {
+    .divTec {
+        margin-top: 990px;
+        padding-bottom: 50px;
+    }
+
+    .divTec h3 {
+        margin-bottom: 25px;
+    }
+
+    .containerTec {
+        display: block;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .title_logoTec {
+        width: 220px;
+        height: 220px;
+        margin: 20px auto;
+    }
+
+    .pTec {
+        font-size: $fs-14;
+    }
+
+}
+
+@include mq(481px, 768px) {
+    .divTec {
+        margin-top: 1080px;
+        height: 3180px;
+    }
+
+    .divTec h3 {
+        margin-bottom: -10px;
+    }
+
+    .containerTec {
+        display: block;
+        height: auto;
+    }
+
+    .title_logoTec {
+        width: 220px;
+        height: 220px;
+        margin: 40px auto;
+    }
+}
+
+@include mq(769px, 1024px) {
+    .divTec {
+        margin-top: 10px;
+    }
+}
+
+@include mq(1025px, 1200px) {}

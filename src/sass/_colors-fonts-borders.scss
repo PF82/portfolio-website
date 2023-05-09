@@ -1,0 +1,61 @@
+// colors
+$font-color: #fff;
+$white: white;
+$yellow: yellow;
+$blue: blue;
+$black: black;
+$red: red;
+$magenta: magenta;
+$grey-light: #D3D3D3;
+$grey-dark: rgb(53, 50, 50);
+$background-color: #1e90ff;
+$color-4: #1e90ff;
+$color-7: #0000cd;
+$red-dark: hsl(360, 67%, 44%);
+$red-light: hsl(360, 71%, 66%);
+$green-teal: #008080;
+$green-dark: hsl(125, 67%, 44%);
+$green-light: hsl(125, 71%, 66%);
+$green-1: green;
+$green-2: rgb(16, 53, 16);
+$primary-1: hsl(205, 86%, 17%);
+$primary-2: hsl(205, 77%, 27%);
+$primary-3: hsl(205, 72%, 37%);
+$primary-4: hsl(205, 63%, 48%);
+$primary-5: hsl(205, 78%, 60%);
+$primary-6: hsl(205, 89%, 70%);
+$primary-7: hsl(205, 90%, 76%);
+$primary-8: hsl(205, 86%, 81%);
+$primary-9: hsl(205, 90%, 88%);
+$primary-10: hsl(205, 100%, 96%);
+
+// font-sizes
+$fs-8: 8px;
+$fs-10: 10px;
+$fs-12: 12px;
+$fs-14: 14px;
+$fs-16: 16px;
+$fs-18: 18px;
+$fs-20: 20px;
+$fs-22: 22px;
+$fs-24: 24px;
+$fs-26: 26px;
+$fs-28: 28px;
+$fs-30: 30px;
+
+// borders
+$b-off: none;
+$b-on: 2px solid red;
+
+// displays
+$d-n: none;
+$d-b: block;
+
+// others 
+$transition: all 0.3s linear;
+$spacing: 0.1rem;
+$radius: 0.25rem;
+$light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+$dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+$max-width: 1170px;
+$fixed-width: 620px;
